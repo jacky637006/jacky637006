@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        html {
+            position: relative;
+            height: 100%;
+        }
+
+        .sticky {
+            position: relative;
+            height: 5000px;
+            /* background-color: red; */
+            top: 0px;
+
+        }
+
+        .item1 {
+            padding-left: 30px;
+            height: 50px;
+            width: 90%;
+            margin: auto;
+            /* background-color: aqua; */
+        }
+
+        .item1_button {
+            /* position: relative; */
+            display: flex;
+            justify-content: flex-end;
+
+        }
+
+        #account {
+            padding-left: 50px;
+            display: flex;
+            justify-content: flex-start;
+            text-decoration: none;
+            color: black;
+            position: absolute;
+            top: 15px;
+        }
+
+        .item1_button a {
+            top: 20px;
+            color: black;
+            text-decoration: none;
+            padding: 10px;
+        }
+
+        .item2 {
+            position: sticky;
+            height: 100px;
+            /* margin: auto; */
+            border-top: 1px solid #aaa;
+            top: 00px;
+            left: 0;
+            width: 100%;
+            z-index: 1;
+            background-color: white;
+        }
+
+        .item2 h1 {
+            /* position: absolute; */
+            margin-top: 10px;
+            padding-top: 20px;
+            padding-left: 100px;
+            display: flex;
+            font-size: 30px;
+            justify-content: flex-start;
+            line-height: 0px;
+        }
+
+        .item2 p {
+            padding-top: 10px;
+            padding-left: 100px;
+            font-size: 10px;
+            justify-content: flex-start;
+        }
+
+        .item2_button {
+            position: absolute;
+            top: 20px;
+            right: 0;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .item2_button a {
+            color: black;
+            text-decoration: none;
+            padding: 10px;
+        }
+
+        .topwrap {
+            width: 100%;
+            display: flex;
+            height: 600px;
+            position: absolute;
+            top: 150px;
+        }
+
+        .pic img {
+            /* position: absolute; */
+            height: 600px;
+            width: 100%;
+        }
+
+        .pic {
+            width: 50%;
+        }
+
+        .txt {
+            width: 50%;
+        }
+
+        .txt {
+            margin: auto;
+            font-size: 40px;
+            padding: 40px;
+            position: absolute;
+            top: 60px;
+            right: -100px;
+            box-sizing: border-box;
+        }
+
+        .txt h1 {
+            font-weight: lighter;
+        }
+
+        .txt h2 {
+            font-size: 60px;
+            color: rgb(250, 206, 9);
+        }
+
+        .txt button {
+            width: 150px;
+            background-color: black;
+            color: white;
+            padding: 10px;
+            border: none;
+        }
+
+        .txt button:hover {
+            background-color: yellow;
+            color: black;
+        }
+
+        .item4 {
+            display: flex;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 800px;
+            width: 100%;
+            height: 200px;
+            margin: 0 3px 3px 0;
+            padding: 5px;
+            /* display: inline-block; */
+            text-align: center;
+            justify-content: space-around;
+            border-top: 2px solid #aaa;
+            /* background-color: blue; */
+        }
+
+        .item4 a {
+            font-size: 30px;
+            color: black;
+            text-decoration: none;
+        }
+
+        .item4 img:hover {
+            border: 2px solid black;
+        }
+
+        .item5 {
+            width: 1200px;
+            display: flex;
+            margin: auto;
+            position: absolute;
+            top: 1200px;
+            left: 350px;
+        }
+
+        .item5 .left {
+            position: relative;
+        }
+
+        .item5 .left .text {
+            position: absolute;
+            font-size: 20px;
+            bottom: 150px;
+            left: 10%;
+        }
+
+        .item5 .left .text h2 {
+            color: #fff;
+            margin-bottom: 20px;
+        }
+
+        .item5 .left .shop-button {
+            color: #fff;
+            background-color: transparent;
+            border: none;
+            font-size: 20px;
+            border-bottom: 2px solid #fff;
+        }
+
+        .item5 .left .shop-button:hover {
+            color: black;
+            border-bottom: 1px solid black;
+            transition: .7S;
+            cursor: pointer;
+        }
+
+        .item5 .right {
+            position: relative;
+        }
+
+        .item5 .right img {
+            padding: 0 60px 25px;
+
+        }
+
+        .item5 .right .text1 {
+            position: absolute;
+            font-size: 20px;
+            top: 25%;
+            left: 10%;
+        }
+
+        .item5 .right .text1 h2 {
+            color: #fff;
+            margin-bottom: 20px;
+        }
+
+        .item5 .right .shop-button {
+            color: #fff;
+            background-color: transparent;
+            border: none;
+            font-size: 20px;
+            border-bottom: 2px solid #fff;
+        }
+
+        .item5 .right .shop-button:hover {
+            color: black;
+            border-bottom: 1px solid black;
+            transition: .7s;
+            cursor: pointer;
+        }
+
+        .item5 .right .text2 {
+            position: absolute;
+            font-size: 20px;
+            bottom: 20%;
+            left: 10%;
+        }
+
+        .item5 .right .text2 h2 {
+            color: #fff;
+            margin-bottom: 20px;
+        }
+
+        .item5 .right .text2 p {
+            color: #fff;
+            margin-bottom: 20px;
+            font-size: 15px;
+        }
+
+        .item7 {
+            position: absolute;
+            width: 1300px;
+            margin: auto;
+            left: 380px;
+            top: 2000px;
+            display: flex;
+        }
+
+        .item7_pic {
+            margin: 10px;
+        }
+
+        .item7_txt a {
+            color: black;
+            text-decoration: none;
+        }
+
+        .item7_txt {
+            padding: 10px;
+        }
+
+        .item7_txt a:hover {
+            background-color: yellow;
+            color: black;
+        }
+
+        .item8_white {
+            height: 400px;
+            width: 400px;
+            background-color: rgba(252, 248, 248, 1);
+            position: absolute;
+            top: 2000px;
+            left: -200px;
+        }
+
+        .photo {
+            top: 400px;
+            width: 1200px;
+            height: 650px;
+            margin: auto;
+            margin-top: 100px;
+            position: absolute;
+        }
+
+        .photo .grape {
+            position: absolute;
+            top: 0px;
+            right: 60px;
+            z-index: -5;
+        }
+
+        .photo .sale {
+            width: 600px;
+            height: 400px;
+            top: -100px;
+            background-color: #fff;
+            position: absolute;
+            box-shadow: 0px 2px 2px 2px #ccc;
+        }
+
+        .photo .sale h1 {
+            position: absolute;
+            text-align: center;
+            font-size: 80px;
+            font-weight: bold;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            top: 80px;
+        }
+
+        .photo .sale p {
+            position: absolute;
+            text-align: center;
+            font-size: 90px;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            margin: auto;
+            top: 160px;
+        }
+
+        .photo .sale button {
+            background-color: yellow;
+            border: none;
+            width: 140px;
+            height: 40px;
+            border-radius: 5px;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            margin: auto;
+            bottom: -250px;
+        }
+
+        .photo .sale button:hover {
+            background-color: black;
+            color: #fff;
+            cursor: pointer;
+            transition: .5s;
+        }
+
+        .on-sale {
+            position: absolute;
+            top: 1100px;
+            /* width: 1200px; */
+            margin: auto;
+
+        }
+
+        .left .txt {
+            position: absolute;
+            top: 700px;
+            left: -50px;
+            width: 600px;
+            font-size: 20px;
+            color: white;
+
+        }
+
+        .left .txt button {
+            background-color: transparent;
+            text-decoration: underline;
+            text-align: left;
+        }
+
+        .on-sale .right {
+            position: absolute;
+            top: 100px;
+            left: 580px;
+            height: 960px;
+            width: 600px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: 30px 0 30px 30px;
+            justify-content: space-around;
+        }
+
+        .on-sale .right h1 {
+            position: absolute;
+            top: -100px;
+            left: 200px;
+
+        }
+
+        .Featured-Posts {
+            position: absolute;
+            top: 2100px;
+            width: 1200px;
+            margin: auto;
+        }
+
+        .Featured-Posts .h3 h3 {
+            margin: 100px 0px 50px;
+            text-align: center;
+            font-size: 25px;
+        }
+
+        .Featured-Posts .posts-top {
+            display: flex;
+        }
+
+        .Featured-Posts .posts-top .posts {
+            width: 1200px;
+        }
+
+        .Featured-Posts .posts-top .posts h2 {
+            font-size: 17px;
+            width: 350px;
+            margin: 10px 0 10px 0;
+            text-align: left;
+        }
+
+        .Featured-Posts .posts-top .posts h2:hover {
+            color: yellow;
+            cursor: pointer;
+            transition: .5s;
+
+        }
+
+        .Featured-Posts .posts-top .posts h3 {
+            font-size: 15px;
+            margin: 10px 0 10px 0;
+            opacity: .7;
+        }
+
+        .Featured-Posts .posts-top .posts p {
+            text-align: left;
+            width: 350px;
+            opacity: .5;
+            margin: 0 0 50px 0;
+        }
+
+        .footer {
+            position: absolute;
+            top: 3000px;
+            left: -400px;
+            width: 170%;
+            margin: auto;
+            background-color: #ccc;
+            display: flex;
+            justify-content: center;
+            justify-content: space-around;
+        }
+
+        .footer .info {
+            width: 250px;
+            padding: 50px 0 0;
+            font-family: Lato, sans-serif;
+        }
+
+        .footer .info h1 {
+            font-size: 20px;
+        }
+
+        .footer .info li {
+            padding: 10px 0 0 0;
+            text-align: center;
+            font-size: 15px;
+            margin: 10px 0 30px 0;
+            text-align: left;
+        }
+
+        .footer .info li:hover {
+            color: yellow;
+            cursor: pointer;
+            transition: .7s;
+        }
+
+        .footer-end {
+            position: absolute;
+            left: -400px;
+            top: 3350px;
+            width: 170%;
+            height: 50px;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+
+    
+        <div class="item1">
+            <a href="#" id="account">My account
+            </a>
+            <div class="item1_button">
+                <a href="#">搜尋</a>
+                <a href="#">收藏</a>
+                <a href="#">購物車</a>
+                <a href="#">USD</a>
+            </div>
+        </div>
+        <div class="sticky">
+            <div class="item2">
+                <h1>KARDONE</h1><br>
+                <p>HEALTLY FOOD</p>
+                <div class="item2_button">
+                    <a href="#">HOME</a>
+                    <a href="#">ABOUT US</a>
+                    <a href="#">COLLECTIONS</a>
+                    <a href="#">BLOG</a>
+                    <a href="#">SALE</a>
+                    <a href="#">CONTACT US</a>
+                </div>
+            </div>
+        </div>
+    
+    <div class="topwrap">
+        <div class="pic">
+            <img src="//cdn.shopify.com/s/files/1/0303/0663/1739/files/slide_1_8911e907-91f8-426b-bb2f-a019275ad8e3_1063x722_crop_center.png?v=1580300183"
+                alt="奇異果">
+        </div>
+
+        <div class="txt">
+            <h1>Fresh and <br>Delicious</h1>
+            <h2>ALL TEAR ROUND!</h2>
+
+            <button>
+                READ MORE
+            </button>
+        </div>
+    </div>
+
+    <div class="item4">
+        <div class="item4_pic">
+            <a href=""> <img src="picture/asset 50.png" alt="">
+                <p>Fresh Fruits</p>
+
+
+            </a>
+
+
+        </div>
+        <div class="item4_pic">
+            <a href=""><img src="picture/asset 51.png" alt="">
+                <p>Veggies</p>
+
+            </a>
+
+        </div>
+
+        <div class="item4_pic">
+            <a href=""><img src="picture/asset 52.png" alt="">
+                <p>Fish</p>
+
+            </a></div>
+
+        <div class="item4_pic"><a href=""><img src="picture/asset 53.png" alt="">
+                <p>Nuts & Seeds</p>
+
+            </a>
+        </div>
+        <div class="item4_pic"><a href=""><img src="picture/asset 54.png" alt="">
+                <p>Bread</p>
+
+            </a></div>
+        <div class="item4_pic">
+            <a href=""><img src="picture/asset 55.png" alt="">
+                <p>Dairy</p>
+
+            </a>
+        </div>
+    </div>
+
+    <div class="item5">
+        <div class="left">
+            <img src="picture/asset 56.jpeg" alt="">
+            <div class="text">
+                <h2>Best Quality Products</h2>
+                <button class="shop-button">
+                    Shop Now
+                </button>
+            </div>
+
+        </div>
+        <div class="right">
+            <img src="picture/asset 57.jpeg" alt="">
+            <div class="text1">
+                <h2>Hot Deals:<br>CRAZY PRICE $2.99</h2>
+                <button class="shop-button">
+                    Shop Now
+                </button>
+            </div>
+            <img src="picture/asset 58.jpeg" alt="">
+            <div class="text2">
+                <h2>HURRY UP!</h2>
+                <p>Don't miss your chance to be the first!</p>
+                <button class="shop-button">
+                    Shop Now
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="item7">
+        <div class="item7_pic"><img src="picture/asset 9.png" alt="">
+            <div class="item7_txt">
+                <p>商品1</p>
+                <p>$30.00</p><a href="">加到購物車</a>
+                <a href="">檢視</a>
+                <a href="">收藏</a>
+            </div>
+        </div>
+        <div class="item7_pic"><img src="picture/asset 10.png" alt="">
+            <div class="item7_txt">
+                <p>商品2</p>
+                <p>$30.00</p><a href="">加到購物車</a>
+                <a href="">檢視</a>
+                <a href="">收藏</a>
+            </div>
+        </div>
+        <div class="item7_pic"><img src="picture/asset 11.png" alt="">
+            <div class="item7_txt">
+                <p>商品3</p>
+                <p>$30.00</p><a href="">加到購物車</a>
+                <a href="">檢視</a>
+                <a href="">收藏</a>
+            </div>
+        </div>
+        <div class="item7_pic"><img src="picture/asset 12.png" alt="">
+            <div class="item7_txt">
+                <p>商品4</p>
+                <p>$30.00</p><a href="">加到購物車</a>
+                <a href="">檢視</a>
+                <a href="">收藏</a>
+            </div>
+        </div>
+
+        <div class="photo">
+            <div class="sale">
+                <h1>20% OFF</h1>
+                <p>Fresh Berries</p>
+                <button>SHOP NOW</button>
+            </div>
+            <div class="grape">
+                <img src="picture/asset 40.jpeg" alt="">
+            </div>
+        </div>
+        <div class="on-sale">
+            <div class="left">
+                <img src="picture/asset 59.jpeg" alt="">
+                <div class="txt">
+                    <h1>Looking for something<br>
+                        special?</h1>
+                    <button>SHOP NOW</button>
+                </div>
+            </div>
+
+            <div class="right">
+                <h1>On Sale</h1>
+                <div class="item">
+                    <img src="picture/asset 41.png" alt="">
+                    <p>P28 Foods Formulated...</p>
+                    <p>$29.00 – $36.00</p>
+                    <div class="item-btn">
+                        <div class="btn1">CHOSE VARIANT</div>
+                        <div class="btn2">眼睛</div>
+                        <div class="btn3">愛心</div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="picture/asset 43.png" alt="">
+                    <p>Nabisco Mini Nilla W...</p>
+                    <p>$30.00</p>
+                    <div class="item-btn">
+                        <div class="btn1">ADD TO CART</div>
+                        <div class="btn2">眼睛</div>
+                        <div class="btn3">愛心</div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="picture/asset 45.png" alt="">
+                    <p>KIND Nuts & Spices, ...</p>
+                    <p>$12.00 – $30.00</p>
+                    <div class="item-btn">
+                        <div class="btn1">CHOSE VARIANT</div>
+                        <div class="btn2">眼睛</div>
+                        <div class="btn3">愛心</div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="picture/asset 47.png" alt="">
+                    <p>Kashi Cereal Bar, Ri...</p>
+                    <p>$23.00</p>
+                    <div class="item-btn">
+                        <div class="btn1-u">UNAVAILABLE</div>
+                        <div class="btn2">眼睛</div>
+                        <div class="btn3">愛心</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="Featured-Posts">
+            <div class="h3">
+                <h3>Featured-Posts</h3>
+            </div>
+            <div class="posts-top">
+                <div class="posts">
+                    <img src="picture/asset 60.jpeg" alt="">
+                    <h3>29 January</h3>
+                    <h2>12 Heavenly Fruits and Honey</h2>
+                    <p>Caffeine and sugar may give you an energy spike, but the crash that follows will leave you
+                        feeling even more tired than before. However, great...</p>
+                </div>
+                <div class="posts">
+                    <img src="picture/asset 61.jpeg" alt="">
+                    <h3>29 January</h3>
+                    <h2>The Great Start of Your Weight</h2>
+                    <p>Kids need energy for sports and play, so it’s important that they’re consuming a
+                        nutrient-dense
+                        snack about an hour before their activity that contains carbohydrates....</p>
+                </div>
+                <div class="posts">
+                    <img src="picture/asset 62.jpeg" alt="">
+                    <h3>29 January</h3>
+                    <h2>The Products that Help You Boost the Energy</h2>
+                    <p>Hello, my dears! My name is mary and here, in my blog, I want to share with you my findings
+                        and
+                        useful thoughts about making...</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="info">
+                <div calss="title">
+                    <h1>Information</h1>
+                </div>
+                <ul>
+                    <li>Home</li>
+                    <li>Services</li>
+                    <li>Blog</li>
+                    <li>About Us</li>
+                    <li>Contact Us</li>
+                </ul>
+            </div>
+            <div class="info">
+                <div calss="title">
+                    <h1>My Account</h1>
+                </div>
+                <ul>
+                    <li>My Account</li>
+                    <li>Order History</li>
+                    <li>Addresses</li>
+                    <li>Wishlist</li>
+                </ul>
+            </div>
+            <div class="info">
+                <div calss="title">
+                    <h1>Our Shop</h1>
+                </div>
+                <ul>
+                    <li>Address<br>
+                        4578 Marmora St, San Francisco D04 89GR</li>
+                    <li>Phone<br>
+                        1-800-1234-567</li>
+                </ul>
+            </div>
+            <div class="info">
+                <div calss="title">
+                    <h1>Newsletter</h1>
+                </div>
+                <ul>
+                    <li>Join our mailing list</li>
+                    <li>Enter your email</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-end">
+            <p>©Healtly Food . Powered by Shopify</p>
+        </div>
+    </div>
+
+</body>
+
+</html>
