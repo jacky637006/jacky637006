@@ -1,0 +1,1064 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+    <link rel="stylesheet" href="colum.css">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+
+        ion-icon {
+            font-size: 64px;
+        }
+
+        .header,
+        .header_title,
+        .head_pic {
+            position: relative;
+            width: 100%;
+        }
+
+        .nav_header_btn {
+            padding-left: 5px;
+        }
+
+        .nav_header_search {
+            display: flex;
+            position: absolute;
+            right: -650px;
+            top: 15px;
+        }
+
+        .header_search input {
+            width: 150px;
+            font-size: 25px;
+
+        }
+
+        .title_pic {
+            margin: auto;
+            text-align: center;
+        }
+
+        .title_icon ion-icon {
+            font-size: 20px;
+        }
+
+        .title_icon {
+            position: absolute;
+            right: 100px;
+        }
+
+        .header_title_nav {
+            width: 100%;
+            padding-top: 10px;
+
+        }
+
+        .header_title_nav a {
+            color: black;
+            text-decoration: none;
+        }
+
+        .header_title_nav a+a::before {
+            content: '/';
+            margin: 0 10px;
+        }
+
+        .head_pic img {
+            width: 100%;
+        }
+
+        .head_pic_txt {
+
+            position: absolute;
+            top: 180px;
+            left: 100px;
+            width: 30%;
+            font-size: 18px;
+            color: white;
+            text-align: end;
+        }
+
+        .head_pic_txt::before {
+            content: '';
+            position: absolute;
+            height: 20px;
+            top: -30px;
+            left: 50px;
+            width: 50px;
+            border-top: 4px solid #fff;
+        }
+
+        .head_pic_txt h1::before {
+            content: '';
+            position: absolute;
+            height: 20px;
+            top: -27px;
+            left: 100px;
+            width: 465px;
+            border-top: 1px solid #fff;
+            font-size: 200px;
+
+        }
+
+        .head_pic button {
+            display: flex;
+            position: absolute;
+            background-color: #fff;
+            bottom: 0;
+            left: 44%;
+            border: none;
+            padding-bottom: 0px;
+        }
+
+        .head_pic button h1 {
+            font-size: 40px;
+        }
+
+        .head_pic button ion-icon {
+            font-size: 50px;
+        }
+
+
+        .content_title{
+            position: relative;
+            top: 25px;
+           display: flex;
+           justify-content: center;
+        }
+
+    
+
+        .about_hair {
+            position: relative;
+            /* top: 50px;
+            margin-top: 50px; */
+
+
+
+
+
+        }
+
+        .about_hair .item {
+            width: 100%;
+            text-align: center;
+            margin-top: 50px;
+            border: 1px solid gray;
+
+
+        }
+        .about_hair .item:hover {
+            background-color: rgb(230, 157, 157);
+           
+        }
+        
+
+        .about_hair .item_txt {
+            margin-top: 50px;
+        }
+        .about_hair .item_txt p a{
+            border: 3px solid black;
+            text-decoration: none;
+            color: black;
+            
+            
+        }
+        .about_hair .item_txt p a:hover{
+            color: white;
+            background-color: black;
+        }
+        .about_hair .item_txt h1{
+            margin-bottom: 30px;
+        }
+        .about_hair .item_txt p{
+            margin-bottom: 30px;
+        }
+
+        .on_sale_title {
+            position: relative;
+            top: 50px;
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+        }
+
+
+        .on_sale_products {
+            position: relative;
+            width: 100%;
+            text-align: center;
+            top: 100px;
+        }
+
+        .on_sale_products .item img {
+            width: 30%;
+            
+        }
+        .on_sale_products #item_txt_a{
+            border: 3px solid black;
+            color: black;
+            text-decoration: none;
+        }
+
+        .on_sale_products .item{
+            border:1px solid gray;
+        }
+        .on_sale_products .item:hover{
+            border:5px solid black;
+
+        }
+        .on_sale_products .item_txt a{
+            color: gray;
+            
+        } 
+       
+
+        .blog_title {
+            position: relative;
+            top: 150px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .bloger {
+            position: relative;
+            top: 200px;
+        }
+
+       .bloger .item::before{
+           position: relative;
+           border-top:1px solid gray;
+           left: 10px;
+           right: 10px;
+           top: 0;
+           bottom: 0;
+       }
+       .bloger .item{
+           border: 1px solid gray;
+       }
+       .bloger .item a{
+           border: 3px solid black;
+           color: black;
+           text-decoration: none;
+       }
+       .bloger .item a:hover{
+           color: white;
+           background-color: black;
+       }
+
+
+        .bloger .item_date {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .bloger .item_txt {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+        }
+        .FEATURED_PRODUCTS_title{
+            position: relative;
+            top: 250px;
+            display: flex;
+            justify-content: center;
+        }
+       
+        .FEATURED_PRODUCTS{
+            position: relative;
+            top: 250px;
+        }
+        .FEATURED_PRODUCTS .item{
+            width: 100%;
+            text-align: center;
+            border: 1px solid rgb(179, 166, 166);
+           
+        }
+        .FEATURED_PRODUCTS .item:hover{
+            border: 1px solid black;
+
+        }
+        .FEATURED_PRODUCTS .item img{
+            width: 50%;
+
+        }
+        .FEATURED_PRODUCTS #Add_to_cart{
+            border: 3px solid black;
+            color: black;
+            text-decoration: none;
+        }
+        .FEATURED_PRODUCTS #Add_to_cart:hover{
+            color: white;
+            background-color: black;
+        }
+        .FEATURED_PRODUCTS #Add_to_Un{
+            color: gray;
+            text-decoration: none;
+            border: 1px solid gray;
+
+        }
+        .FEATURED_PRODUCTS i{
+            color: gray;
+
+        }
+
+        .INSTAGRAM_title {
+            position: relative;
+            top: 250px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .GET_SPECIAL {
+            position: relative;
+            top: 300px;
+            background-color: rgb(122, 221, 228);
+            display: flex;
+            justify-content: center;
+            text-align: center;
+
+        }
+
+        .GET_SPECIAL .item {
+            margin: 20px;
+        }
+        .GET_SPECIAL_a a{
+             
+            color: black;
+            text-decoration: none;
+
+        }
+        #subscribe a{
+            text-decoration: none;
+            color: black;
+            border: 2px solid black;
+        }
+        #subscribe a:hover{
+            background-color: black;
+            color: white;
+        }
+
+        .map {
+            background-color: rgb(142, 155, 231);
+            height: 150px;
+            position: relative;
+            top: 300px;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+        }
+        .foot{
+            position: relative;
+            top: 300px;
+            background-color: rgb(25, 23, 36);
+            color: white;
+           
+
+        }
+        .foot a{
+            
+            color: white;
+            text-decoration: none;
+
+        }
+        .foot a:hover{
+            color: rgb(52, 193, 218);
+        }
+        .end{
+            position: relative;
+            top: 300px;
+            background-color: rgb(37, 36, 36);
+            color: white;
+            height: 50px;
+
+
+        }
+        .end p{
+            position: absolute;
+            top: 10px;
+            left: 12px;
+        }
+        
+        
+        
+       
+        @media screen and (min-width: 768px) {
+            .on_sale_products #item_txt_p{
+            display: none;
+        }
+        .FEATURED_PRODUCTS #item_txt_p{
+            display: none;
+
+        }
+       
+        }
+
+       
+
+
+        @media screen and (max-width: 768px) {
+            .head {
+                position: relative;
+                /* background-color: royalblue; */
+                height: 50px;
+            }
+
+            .head_end {
+                position: absolute;
+                display: flex;
+                top: 0px;
+                left: 200px;
+            }
+
+            .head_end p {
+                margin-top: 10px;
+            }
+
+            .head_h {
+                display: flex;
+                justify-content: center;
+                position: relative;
+            }
+
+            .head_a {
+                display: none;
+            }
+
+            .head_title_end {
+                position: absolute;
+                top: 50px;
+                left: 200px;
+
+            }
+
+            .head_pic {
+                position: relative;
+            }
+
+            .head_pic h1 {
+                position: absolute;
+                top: 0px;
+                width: 90%;
+                left: 0;
+            }
+
+            .head_pic h1::before {
+                content: '';
+                border-top: 3px solid red;
+
+
+
+                display: block;
+                position: absolute;
+                bottom: 0px;
+                left: 0px;
+                top: 0px;
+                right: 1000px;
+            }
+
+            .head_pic_p p {
+                display: none;
+            }
+
+            .content {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+            }
+
+            .content .item {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                text-align: center;
+                margin: 20px;
+            }
+            
+            .content_pic .item {
+                position:relative;
+                left: -100px;
+                width: 300px;
+
+
+
+            }
+            
+           
+
+            .content_pic_txt {
+                position: absolute;
+                left: 250px;
+                top: 0px;
+
+            }
+            
+
+            .on_sale_products .item {
+                width: 100%;
+                display: flex;
+            }
+
+            .on_sale_products .item_pic {
+                width: 50%;
+            }
+
+            .on_sale_products .item img {
+                width: 30%;
+                margin-left: 50px;
+               
+
+            }
+           
+
+            .on_sale_products .item_txt {
+                width: 50%;
+            }
+            .FEATURED_PRODUCTS .item{
+                width: 100%;
+                display: flex;
+            }
+            .FEATURED_PRODUCTS .item .item_pic{
+                width: 50%;
+            }
+            .FEATURED_PRODUCTS .item .item_txt{
+                width: 50%;
+            }
+            .FEATURED_PRODUCTS .item img{
+            width: 50%;
+
+        }
+
+
+            .bloger .item_pic {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+            }
+
+            .bloger .item_pic img {
+                width: 50%;
+            }
+
+
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="row">
+            <div class="nav_header_btn col-6">
+                <ion-icon name="menu-outline"></ion-icon>
+            </div>
+            <div class="nav_header_search col-6">
+                <img src="https://scontent.frmq2-2.fna.fbcdn.net/v/t1.0-9/cp0/90212691_3022183891136055_6191878055120601088_n.jpg?_nc_cat=107&_nc_sid=8024bb&_nc_ohc=HRIyYp_hKjEAX8i1u-q&_nc_ht=scontent.frmq2-2.fna&oh=a96ad0b2034f245c44ee500cacd3a7ec&oe=5E9A59F2"
+                    alt="購物車">
+                <div class="header_search">
+                    <form action="/search" method="get" class="search_form">
+                        <input id="search_field" type="text" placeholder="search store"></form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header_title">
+        <div class="row">
+            <div class="title_pic">
+                <a href="#">
+                    <img src="//cdn.shopify.com/s/files/1/1711/1759/t/2/assets/logo.png?v=10135009575348054093"
+                        alt="圖片說明">
+                </a>
+                <div class="header_title_nav">
+                    <div class="row">
+                        <a href="">HOME</a>
+                        <a href="">PRODUCTS</a>
+                        <a href="">BLOG</a>
+                        <a href="">SALE</a>
+                        <a href="">ABOUT US</a>
+                        <a href="">CONTACT US</a>
+                    </div>
+                </div>
+            </div>
+            <div class="title_icon">
+                <ion-icon name="logo-twitter"></ion-icon>
+                <ion-icon name="logo-facebook"></ion-icon>
+                <ion-icon name="logo-youtube"></ion-icon>
+                <ion-icon name="logo-pinterest"></ion-icon>
+                <ion-icon name="logo-google"></ion-icon>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="head_pic col-12">
+        <img src="https://cdn.shopify.com/s/files/1/1711/1759/t/2/assets/greeting_image.jpg?586185872078069732"
+            alt="圖片說明">
+        <div class="head_pic_txt">
+            <h1>JOIN OUR DISCOUNT CLUB & SAVE 25% ON EVERYTHING!</h1>
+        </div>
+        <button>
+            <h1>JOIN NOW</h1>
+            <ion-icon name="arrow-forward-circle-outline"></ion-icon>
+        </button>
+    </div>
+
+    <div class="content">
+        <div class="row">
+            <div class="col-md-4 col-12">
+                <div class="item item_NEW_ARRIVALS">
+                    <h1 id="NEW_ARRIVALS">NEW ARRIVALS</h1>
+                    <p>SEE OUR LATEST MUSTHAVES >></p>
+                </div>
+            </div>
+            <div class="col-md-4 col-12">
+                <div class="item item_WE_LOVE">
+                    <h1 id="WE_LOVE">WE LOVE</h1>
+                    <p>CHECK OUR STYLISH FAVORITES >></p>
+                </div>
+            </div>
+            <div class="col-md-4 col-12">
+                <div class="item item_FREE_SHIPPING">
+                    <h1 id="FREE_SHIPPING">FREE SHIPPING</h1>
+                    <p>ON ALL 2016 COLLEXTION >></p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="content_pic">
+        <div class="row">
+            <div class="item"><img
+                    src="https://scontent.frmq2-1.fna.fbcdn.net/v/t1.0-9/89760707_3022536267767484_5864616489356623872_n.jpg?_nc_cat=105&_nc_sid=8024bb&_nc_eui2=AeE8_pyoiUFbSy_zc3hUwEhId8ZSgCohc47fiHrkSZnA_1Oegxs1Gf1WsXehZthVtB0Rzn3jzcSrOL-VxGXOPnwDHFUbbd7a4DXr9BsqKBMe6Q&_nc_ohc=FVIZCA_I2m4AX9QsWfA&_nc_ht=scontent.frmq2-1.fna&oh=27fc1f75d5002cc248cedb4e5fa78c48&oe=5E9CC530"
+                    alt="">
+                <div class="content_pic_txt">
+                    <h1>HAIR</h1>
+                    <h2>EXTENSIONS</h2>
+                    <p>ADD LENGTH & VOLUME IN SECONDS
+                        <br>
+                        <p><a href=""> Read More</a></p>
+
+                    </p>
+                </div>
+            </div>
+
+
+
+
+        </div>
+    </div>
+
+    <div class="content_title">
+        <div class="row">
+            <h1>BROWSE OUR CATEGORIES</h1>
+
+
+
+        </div>
+    </div>
+
+    <div class="about_hair">
+        <div class="row">
+            <div class="col-12 col-md-6 col-xl-3">
+                <div class="item">
+                    <img src="https://cdn.shopify.com/s/files/1/1711/1759/collections/category1_c699b5ea-b75e-4185-9a8e-2a65b0fc3814_430x396_crop_top.jpg?0"
+                        alt="">
+                    <div class="item_txt">
+                        <h1>Men’s hair care</h1>
+                        <p><a href="">7 products</a></p>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-xl-3">
+                <div class="item">
+                    <img src="https://cdn.shopify.com/s/files/1/1711/1759/collections/category2_430x396_crop_top.jpg?0"
+                        alt="">
+                    <div class="item_txt">
+                        <h1>HAIR STYLING</h1>
+                        <p><a href="">13 products</a></p>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-xl-3">
+                <div class="item">
+                    <img src="https://cdn.shopify.com/s/files/1/1711/1759/collections/category3_430x396_crop_top.jpg?0"
+                        alt="">
+                    <div class="item_txt">
+                        <h1>HAIR HEALTH TREATMENT</h1>
+                        <p><a href="">9 products</a></p>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-xl-3">
+                <div class="item">
+                    <img src="https://cdn.shopify.com/s/files/1/1711/1759/collections/category4_430x396_crop_top.jpg?0"
+                        alt="">
+                    <div class="item_txt">
+                        <h1>HAIR CARE FOR KIDS</h1>
+                        <p><a href="">products</a></p>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="on_sale_title">
+        <div class="row">
+            <h1>PRODUCTS ON SALE</h1>
+        </div>
+    </div>
+
+    <div class="on_sale_products">
+        <div class="row">
+            <div class="col-12 col-md-6 col-xl-3">
+                <div class="item ">
+                    <div class="item_pic"><img
+                            src="//cdn.shopify.com/s/files/1/1711/1759/products/argan_oil_hair_mask_02_370x370_crop_top.png?v=1484312931"
+                            alt=""></div>
+
+                    <div class="item_txt ">
+                        <p>Argan Oil Hair Mask</p>
+                        <h1>$60.00</h1>
+                        <p id="item_txt_p">We know that some hair seems to be bad-tempered For saving your time, please
+                            use filters: brand, concerns, formulation, ingredient preferences, siz...</p>
+                        <p>
+                            <a id="item_txt_a" href="">Add to cart</a>
+                            <br>
+                            <a href=""><i class="far fa-heart"></i></a>
+                            <a href=""><i class="far fa-eye"></i></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-xl-3">
+                <div class="item">
+                    <div class="item_pic"> <img
+                            src="//cdn.shopify.com/s/files/1/1711/1759/products/garnier_fructis_02_370x370_crop_top.png?v=1484312992"
+                            alt="">
+                    </div>
+
+                    <div class="item_txt">
+                        <p>Garnier Fructis</p>
+                        <h1>From $90.00</h1>
+                        <p id="item_txt_p">Hairspray and Styling Products Coco Chanel said that a woman who cuts her
+                            hair is about to change her life. We’ll add that a woman who does anythin...</p>
+                        <p>
+                            <a id="item_txt_a" href="">Add to cart</a>
+                            <br>
+                            <a href=""><i class="far fa-heart"></i></a>
+                            <a href=""><i class="far fa-eye"></i></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-xl-3">
+                <div class="item">
+                    <div class="item_pic"><img
+                            src="//cdn.shopify.com/s/files/1/1711/1759/products/herbal_essences_02_370x370_crop_top.png?v=1484313034"
+                            alt="">
+                    </div>
+
+                    <div class="item_txt">
+                        <p>Herbal Essences</p>
+                        <h1>$80.00</h1>
+                        <p id="item_txt_p">Hairspray and Styling Products Coco Chanel said that a woman who cuts her
+                            hair is about to change her life. We’ll add that a woman who does anythin...</p>
+                        <p>
+                            <a id="item_txt_a" href="">Add to cart</a>
+                            <br>
+                            <a href=""><i class="far fa-heart"></i></a>
+                            <a href=""><i class="far fa-eye"></i></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-xl-3">
+                <div class="item">
+                    <div class="item_pic"> <img
+                            src="//cdn.shopify.com/s/files/1/1711/1759/products/l_oreal_paris_studio_line_2_370x370_crop_top.png?v=1484313094"
+                            alt="">
+                    </div>
+
+                    <div class="item_txt">
+                        <p>L'Oreal Paris Studio Line</p>
+                        <h1>From $90.00</h1>
+                        <p id="item_txt_p">We know that some hair seems to be bad-tempered For saving your time, please
+                            use filters: brand, concerns, formulation, ingredient preferences, siz...</p>
+                        <p>
+                            <a id="item_txt_a" href="">Add to cart</a>
+                            <br>
+                            <a href=""><i class="far fa-heart"></i></a>
+                            <a href=""><i class="far fa-eye"></i></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="blog_title">
+        <div class="row">
+            <h1>SEE WHAT'S NEW ON OUR BLOG</h1>
+        </div>
+    </div>
+
+    <div class="bloger">
+        <div class="row">
+            <div class="col-12 col-md-4">
+                <div class="item">
+                    <div class="item_date">
+                        <h1>14 JANUARY</h1>
+                        <p>Posted by David Braun 2 Comments</p>
+
+                    </div>
+                    <div class="item_pic">
+                        <img src="//cdn.shopify.com/s/files/1/1711/1759/articles/blog3_a7f4371f-e5f2-46ae-a3c0-01ff3da3296e_536x272_crop_top.jpg?v=1484830753"
+                            alt="">
+
+                    </div>
+
+                    <div class="item_txt">
+                        <h1>You bring beauty to the world</h1>
+                        <p>Coco Chanel said that a woman who cuts her hair is about...
+                        </p>
+                        <p id="item_txt_a"><a href="">Read more</a></p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="item">
+                    <div class="item_date">
+                        <h1>14 JANUARY</h1>
+                        <p>Posted by David Braun 0 Comments</p>
+
+                    </div>
+                    <div class="item_pic">
+                        <img src="//cdn.shopify.com/s/files/1/1711/1759/articles/blog2_536x272_crop_top.jpg?v=1484388216"
+                            alt="">
+
+                    </div>
+
+                    <div class="item_txt">
+                        <h1>Of best hair products here</h1>
+                        <p>Whoever you are, a professional hair stylist or a person who professionally...</p>
+                        <p id="item_txt_a"> <a href="">Read more</a></p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="item">
+                    <div class="item_date">
+                        <h1>14 JANUARY</h1>
+                        <p>Posted by David Braun 0 Comments</p>
+
+                    </div>
+                    <div class="item_pic">
+                        <img src="//cdn.shopify.com/s/files/1/1711/1759/articles/blog4_536x272_crop_top.jpg?v=1484388167"
+                            alt="">
+
+                    </div>
+
+                    <div class="item_txt">
+                        <h1>Or to be more precise...have...</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam at quam expedita.</p>
+                        <p id="item_txt_a"><a href="">Read more</a></p>
+
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <div class="FEATURED_PRODUCTS_title">
+        <h1>FEATURED PRODUCTS</h1>
+    </div>
+
+    <div class="FEATURED_PRODUCTS">
+        <div class="row">
+            <div class="col-md-6 col-xl-3">
+                <div class="item">
+                    <div class="item_pic">
+                        <img src="https://cdn.shopify.com/s/files/1/1711/1759/products/infiniti_pro_by_conair_hair_designer_3_in_1_styling_system_02_370x370_crop_top.png?v=1484313055"
+                            alt="">
+                    </div>
+                    <div class="item_txt">
+                        <p>Infiniti Pro by Conair Hair Designer 3 in 1 Sty...</p>
+                        <p id="item_txt_p">We know that some hair seems to be bad-tempered For saving your time, please
+                            use filters: brand, concerns, formulation, ingredient preferences, siz...</p>
+                        <h1>$50.00</h1>
+                        <p id="item_txt_a"><a href="" id="Add_to_cart">Add to cart</a></p>
+                        <p><a href=""><i class="far fa-heart"></i></a><a href=""><i class="far fa-eye"></i></a></p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-xl-3">
+                <div class="item">
+                    <div class="item_pic">
+                        <img src="https://cdn.shopify.com/s/files/1/1711/1759/products/instyler_ionic_styler_pro_ceramic_flat_iron_2_370x370_crop_top.png?v=1484313065"
+                            alt="">
+                    </div>
+                    <div class="item_txt">
+                        <p>InStyler Ionic Styler Pro Ceramic Flat Iron</p>
+                        <p id="item_txt_p">They will style the hair-do for as long as you need Whoever you are, a
+                            professional hair stylist or a person who professionally cares about his hai...</p>
+                        <h1>$66.00</h1>
+                        <p><a href="" id="Add_to_Un">Unsvailable</a></p>
+                        <p><a href=""><i class="far fa-heart"></i></a><a href=""><i class="far fa-eye"></i></a></p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-xl-3">
+                <div class="item">
+                    <div class="item_pic">
+                        <img src="https://cdn.shopify.com/s/files/1/1711/1759/products/jose_eber_wet_dry_flat_iron_straightener_02_370x370_crop_top.png?v=1484313085"
+                            alt="">
+                    </div>
+                    <div class="item_txt">
+                        <p>Jose Eber Wet & Dry Flat Iron Straightener</p>
+                        <p id="item_txt_p">Take your hair to a next level with our hair sprays Whoever you are, a
+                            professional hair stylist or a person who professionally cares about his hai...</p>
+                        <h1>$88.00</h1>
+                        <p><a href="" id="Add_to_cart">Add to cart</a></p>
+                        <p><a href=""><i class="far fa-heart"></i></a><a href=""><i class="far fa-eye"></i></a></p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-xl-3">
+                <div class="item">
+                    <div class="item_pic">
+                        <img src="https://cdn.shopify.com/s/files/1/1711/1759/products/glide_thru_detangler_hair_comb_or_brush_02_370x370_crop_top.png?v=1484313003"
+                            alt="">
+                    </div>
+                    <div class="item_txt">
+                        <p>Glide Thru Detangler Hair Comb or Brush</p>
+                        <p id="item_txt_p">Take your hair to a next level with our hair sprays Whoever you are, a
+                            professional hair stylist or a person who professionally cares about his hai...</p>
+                        <h1>$56.00</h1>
+                        <p><a href="" id="Add_to_cart">Add to cart</a></p>
+                        <p><a href=""><i class="far fa-heart"></i></a><a href=""><i class="far fa-eye"></i></a></p>
+
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <div class="INSTAGRAM_title">
+        <div class="row">
+            <h1>FOLLOW US ON INSTAGRAM</h1>
+
+        </div>
+    </div>
+
+    <div class="GET_SPECIAL ">
+        <div class="row">
+            <div class="item">
+                <h4>GET OUR SPECIAL OFFERS</h4>
+                <h5>AND THE ULTIMATE HAIR CARE TIPS & TRICKS!</h5>
+                <p id="subscribe"><a href="">subscribe</a></p>
+                <div class="GET_SPECIAL_a">
+                    <h4>LET'S STAY CONNECTED</h4>
+                    <p><a href=""><i class="fab fa-twitter"></i></a>
+                        <a href=""><i class="fab fa-facebook"></i></a>
+                        <a href=""><i class="fab fa-youtube"></i></a>
+
+                        <a href=""><i class="fab fa-google-plus"></i></a>
+
+
+                </div>
+
+
+            </div>
+
+
+
+        </div>
+    </div>
+
+
+    <div class="map">
+        <h1>MAP</h1>
+    </div>
+
+    <div class="foot">
+        <div class="row">
+            <div class="col-md-3 col-12">
+                <h1>Style Factory</h1>
+                <p>This web store was originally launched in 2002 and was then titled the Style Factory. This name was a
+                    perfect fit then, simply because we’ve always had our focus on our hair care & hair treatment
+                    products lineup.</p>
+            </div>
+            <div class="col-md-3 col-12">
+                <h3>CATEGORIES</h3>
+                <p><a href="">Hair Styling</a></p>
+                <p><a href="">Men’s Hair Care</a></p>
+                <p><a href="">Hair Care For Kids</a></p>
+                <p> <a href="">Hair Health Treatment</a><a href="">Featured Products</a></p>
+                <p><a href="">Sale</a></p>
+
+
+
+
+
+
+
+            </div>
+            <div class="col-md-3 col-12">
+                <h3>MENU</h3>
+                <p><a href="">Home</a></p>
+                <p><a href="">Catalog</a></p>
+                <p><a href="">About Us</a></p>
+                <p><a href="">Contact Us</a></p>
+                <p><a href="">Wishlist</a></p>
+                <p><a href="">Sitemap</a></p>
+
+
+
+
+
+
+            </div>
+            <div class="col-md-3 col-12">
+                <h3>CONTACT INFORMATION</h3>
+                <p>4578 Marmora Road, Glasgow D04 89GR <br>1(234) 567-9842 <br>info@demolink.org</p>
+            </div>
+
+        </div>
+    </div>
+    <div class="end">
+        <p>© 2020 Style Factory. All rights reserved. Powered by Shopify</p>
+
+    </div>
+
+
+</body>
+
+</html>
