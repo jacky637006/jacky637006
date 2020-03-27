@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+    <link rel="stylesheet" href="colum.css">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+        body{
+            
+        }
+
+        ion-icon {
+            font-size: 64px;
+        }
+
+        .header,
+        .header_title,
+        .head_pic {
+            position: relative;
+            width: 100%;
+        }
+
+        .nav_header_btn {
+            padding-left: 5px;
+        }
+
+        .nav_header_search {
+            /* display: inline-flex; */
+            margin-left: auto;
+            /* position: absolute; */
+            /* right: -550px; */
+            /* top: 15px; */
+        }
+
+        .header_search input {
+            width: 150px;
+            font-size: 25px;
+
+        }
+
+        .title_pic {
+            margin: auto;
+            text-align: center;
+        }
+
+        .title_icon ion-icon {
+            font-size: 20px;
+        }
+
+        .title_icon {
+            position: absolute;
+            right: 100px;
+        }
+
+        .header_title_nav {
+            width: 100%;
+            font-size: 20px;
+            padding: 30px;
+
+        }
+
+        .header_title_nav a {
+            color: black;
+            text-decoration: none;
+        }
+
+        .header_title_nav a+a::before {
+            content: '/';
+            margin: 0 10px;
+        }
+
+        .head_pic img {
+            width: 100%;
+        }
+
+        .head_pic_txt {
+
+            position: absolute;
+            top: 180px;
+            left: 100px;
+            width: 30%;
+            font-size: 18px;
+            color: white;
+            text-align: end;
+        }
+
+        .head_pic_txt::before {
+            content: '';
+            position: absolute;
+            height: 20px;
+            top: -30px;
+            left: 50px;
+            width: 50px;
+            border-top: 4px solid #fff;
+        }
+
+        .head_pic_txt h1::before {
+            content: '';
+            position: absolute;
+            height: 20px;
+            top: -27px;
+            left: 100px;
+            width: 465px;
+            border-top: 1px solid #fff;
+            font-size: 200px;
+
+        }
+
+        .head_pic button {
+            display: flex;
+            position: absolute;
+            background-color: #fff;
+            bottom: 0;
+            left: 44%;
+            border: none;
+            padding-bottom: 0px;
+        }
+
+        .head_pic button h1 {
+            font-size: 40px;
+        }
+
+        .head_pic button ion-icon {
+            font-size: 50px;
+        }
+
+        .show_case {
+            margin: auto;
+            width: 100%;
+            /* position: relative; */
+            justify-content: center;
+            text-align: center;
+            font-size: 22px;
+          
+        }
+        .show_case P{
+            font-size: 22px;
+            letter-spacing:2px;
+            color: black;
+        }
+        .show_case_item1{
+            margin-top: 30px;
+            padding-top: 20px;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            color: #7dd0dc;
+            box-sizing: border-box;
+        }
+        .show_case_item1:hover{
+            border-top: 1px solid #7dd0dc;
+            border-bottom: 1px solid black;
+        }
+        .show_case_item2{
+            margin-top: 30px;
+            padding-top: 20px;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            color: #d4bcb5;
+            box-sizing: border-box;
+        }
+        .show_case_item2:hover{
+            border-top: 1px solid #d4bcb5;
+            border-bottom: 1px solid black;
+        }
+        .show_case_item3{
+            border: 10px;
+            margin-top: 30px;
+            padding-top: 20px;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            color: #ffa396;
+            box-sizing: border-box;
+        }
+        .show_case_item3:hover{
+            border-top: 1px solid #ffa396;
+            border-bottom: 1px solid black;
+        }
+        .show_case_item2 ion-icon{
+            font-size: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="row">
+            <div class="nav_header_btn col-6">
+                <ion-icon name="menu-outline"></ion-icon>
+            </div>
+            <div class="nav_header_search col-6">
+                <img src="https://scontent.frmq2-2.fna.fbcdn.net/v/t1.0-9/cp0/90212691_3022183891136055_6191878055120601088_n.jpg?_nc_cat=107&_nc_sid=8024bb&_nc_ohc=HRIyYp_hKjEAX8i1u-q&_nc_ht=scontent.frmq2-2.fna&oh=a96ad0b2034f245c44ee500cacd3a7ec&oe=5E9A59F2"
+                    alt="購物車">
+                <div class="header_search">
+                    <form action="/search" method="get" class="search_form">
+                        <input id="search_field" type="text" placeholder="search store"></form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header_title">
+        <div class="row">
+            <div class="title_pic">
+                <a href="#">
+                    <img src="//cdn.shopify.com/s/files/1/1711/1759/t/2/assets/logo.png?v=10135009575348054093"
+                        alt="圖片說明">
+                </a>
+                <div class="header_title_nav">
+                    <div class="row">
+                        <a href="">HOME</a>
+                        <a href="">PRODUCTS</a>
+                        <a href="">BLOG</a>
+                        <a href="">SALE</a>
+                        <a href="">ABOUT US</a>
+                        <a href="">CONTACT US</a>
+                    </div>
+                </div>
+            </div>
+            <div class="title_icon">
+                <ion-icon name="logo-twitter"></ion-icon>
+                <ion-icon name="logo-facebook"></ion-icon>
+                <ion-icon name="logo-youtube"></ion-icon>
+                <ion-icon name="logo-pinterest"></ion-icon>
+                <ion-icon name="logo-google"></ion-icon>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="head_pic col-12">
+        <img src="https://cdn.shopify.com/s/files/1/1711/1759/t/2/assets/greeting_image.jpg?586185872078069732"
+            alt="圖片說明">
+        <div class="head_pic_txt">
+            <h1>JOIN OUR DISCOUNT CLUB & SAVE 25% ON EVERYTHING!</h1>
+        </div>
+        <button>
+            <h1>JOIN NOW</h1>
+            <ion-icon name="arrow-forward-circle-outline"></ion-icon>
+        </button>
+    </div>
+    <div class="show_case">
+        <div class="row">
+            <div class="show_case_item1 col-4">
+                <h1>NEW ARRIVALS</h1>
+                <P>SEE OUR LATEST MUST-HAVES >></P>
+            </div>
+            <div class="show_case_item2 col-4">
+                <h1>WE LOVE<ion-icon name="heart-outline"></h1>
+                    <P>
+                        CHECK OUT STYLISH FAVORITES >>
+                    </P>
+            </div>
+            <div class="show_case_item3 col-4">
+                <h1>FREE SHIPPING</ion-icon>
+                </h1>
+                <p>ON ALL 2016 COLLECTION >></p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
