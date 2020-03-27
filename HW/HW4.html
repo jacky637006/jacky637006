@@ -1,270 +1,1016 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
-    <link rel="stylesheet" href="colum.css">
-    <title>Document</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/f7ce507d70.js" crossorigin="anonymous"></script>
+    <title>STYLE FACTORY!</title>
     <style>
-        * {
-            padding: 0;
-            margin: 0;
+        .social_list {
             list-style: none;
-        }
-        body{
-            
+            display: flex;
         }
 
-        ion-icon {
-            font-size: 64px;
+        .social_list a {
+            padding-left: 10px;
+            color: #eee;
         }
 
-        .header,
-        .header_title,
-        .head_pic {
+        .header-title .row {
             position: relative;
-            width: 100%;
+            height: 110px;
         }
 
-        .nav_header_btn {
-            padding-left: 5px;
-        }
-
-        .nav_header_search {
-            /* display: inline-flex; */
-            margin-left: auto;
-            /* position: absolute; */
-            /* right: -550px; */
-            /* top: 15px; */
-        }
-
-        .header_search input {
-            width: 150px;
-            font-size: 25px;
-
-        }
-
-        .title_pic {
-            margin: auto;
-            text-align: center;
-        }
-
-        .title_icon ion-icon {
-            font-size: 20px;
-        }
-
-        .title_icon {
+        .title-icon {
             position: absolute;
-            right: 100px;
+            bottom: 0;
+            right: 0;
         }
 
-        .header_title_nav {
+        .navbar {
             width: 100%;
-            font-size: 20px;
-            padding: 30px;
-
         }
 
-        .header_title_nav a {
-            color: black;
+        #menu-control {
+            display: none;
+        }
+
+        .btn-outline-success {
+            color: #000;
+            border-color: #000;
+        }
+
+        .nav-btn-button {
+            display: none;
+        }
+
+        input:checked~.nav-btn-button {
+            display: block;
+        }
+
+        .menu-btn {
+            display: block;
+            width: 40px;
+            height: 40px;
+            position: relative;
+        }
+
+        .menu-btn span {
+            position: absolute;
+            height: 4px;
+            width: 24px;
+            background-color: #000;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+        }
+
+        .menu-btn span:nth-child(1) {
+            transform: translateY(-6px);
+        }
+
+        .menu-btn span:nth-child(3) {
+            transform: translateY(6px);
+        }
+
+        .nav-btn-button {
+            border: 1px solid #aaa;
+            position: absolute;
+            top: 65px;
+            left: 24px;
+        }
+
+        .nav-btn-button a {
+            display: block;
+            padding: 5px 20px;
+            background-color: #fff;
+            color: #000;
             text-decoration: none;
         }
 
-        .header_title_nav a+a::before {
-            content: '/';
-            margin: 0 10px;
+        .top-pannel {
+            height: 53px;
         }
 
-        .head_pic img {
-            width: 100%;
+        .breadcrumb li a {
+            color: #000;
         }
 
-        .head_pic_txt {
-
-            position: absolute;
-            top: 180px;
-            left: 100px;
-            width: 30%;
-            font-size: 18px;
-            color: white;
-            text-align: end;
+        .header-pic {
+            padding-bottom: 100px;
         }
 
-        .head_pic_txt::before {
+        .menu {
+            padding-bottom: 100px;
+            position: relative;
+        }
+
+        .menu .col-12 {
+            text-align: center;
+            padding: 0 10px;
+            height: 150px;
+        }
+
+        .menu .col-12 .txt {
+            height: 150px;
+        }
+
+        .menu-item1 {
+            border-bottom: 1px solid #ccc;
+            border-top: 1px solid #7dd;
+
+        }
+
+        .menu-item2 {
+            border-bottom: 1px solid #ccc;
+            border-top: 1px solid #dbb;
+        }
+
+        .menu-item3 {
+            border-bottom: 2px solid #ccc;
+            border-top: 1px solid #fa9
+        }
+
+        .menu .col-12:nth-child(1) h3 {
+            color: #7dd;
+            margin: 30px 0;
+        }
+
+        .menu .col-12:nth-child(2) h3 {
+            color: #dbb;
+            margin: 30px 0;
+
+        }
+
+        .menu .col-12:nth-child(3) h3 {
+            color: #fa9;
+            margin: 30px 0;
+
+        }
+
+        .header-pic {
+            position: relative;
+        }
+
+        .header-pic-txt::before {
             content: '';
             position: absolute;
-            height: 20px;
-            top: -30px;
-            left: 50px;
-            width: 50px;
-            border-top: 4px solid #fff;
+            height: 4px;
+            width: 40px;
+            top: -10px;
+            left: 0px;
+            border-bottom: 4px solid white;
         }
 
-        .head_pic_txt h1::before {
+        .header-pic::before {
             content: '';
             position: absolute;
-            height: 20px;
-            top: -27px;
-            left: 100px;
-            width: 465px;
-            border-top: 1px solid #fff;
-            font-size: 200px;
-
+            height: 4px;
+            width: 360px;
+            top: 90px;
+            left: 140px;
+            border-bottom: 2px solid white;
         }
 
-        .head_pic button {
-            display: flex;
+        .header-pic-txt {
             position: absolute;
-            background-color: #fff;
-            bottom: 0;
-            left: 44%;
-            border: none;
-            padding-bottom: 0px;
+            width: 28.5714285714286%;
+            top: 100px;
+            left: 100px;
+            font-size: 30px;
+            color: #fff;
         }
 
-        .head_pic button h1 {
-            font-size: 40px;
+        .hair-pic {
+            padding-bottom: 50px;
         }
 
-        .head_pic button ion-icon {
+        .hair-pic .col-12 {
+            height: 100%;
+            position: relative;
+        }
+
+        .hair-pic .pic {
+            height: 350px;
+            object-fit: cover;
+        }
+
+        .hair-pic .txt {
+            position: absolute;
+            right: 20%;
+            top: 25%;
+        }
+
+        .hair-pic .txt h2 {
+            font-size: 70px;
+            color: #fff;
+        }
+
+        .hair-pic .txt h3 {
             font-size: 50px;
         }
 
-        .show_case {
-            margin: auto;
-            width: 100%;
-            /* position: relative; */
-            justify-content: center;
+        .hair-pic .txt h4 {
+            font-size: 22px;
+            text-transform: uppercase;
+            padding-bottom: 20px;
+        }
+
+        .hair-pic  a {
+            text-decoration: none;
+            border: solid #000;
+            color: #000;
+            padding: 10px 20px;
+        }
+
+        .hair-pic  a:hover {
+            background-color: #000;
+            border: solid #000;
+            color: #fff;
+        }
+
+        .browse-title {
             text-align: center;
-            font-size: 22px;
-          
+            padding-bottom: 50px;
         }
-        .show_case P{
-            font-size: 22px;
-            letter-spacing:2px;
-            color: black;
-        }
-        .show_case_item1{
-            margin-top: 30px;
-            padding-top: 20px;
-            margin-bottom: 30px;
-            padding-bottom: 20px;
-            color: #7dd0dc;
-            box-sizing: border-box;
-        }
-        .show_case_item1:hover{
-            border-top: 1px solid #7dd0dc;
-            border-bottom: 1px solid black;
-        }
-        .show_case_item2{
-            margin-top: 30px;
-            padding-top: 20px;
-            margin-bottom: 30px;
-            padding-bottom: 20px;
-            color: #d4bcb5;
-            box-sizing: border-box;
-        }
-        .show_case_item2:hover{
-            border-top: 1px solid #d4bcb5;
-            border-bottom: 1px solid black;
-        }
-        .show_case_item3{
-            border: 10px;
-            margin-top: 30px;
-            padding-top: 20px;
-            margin-bottom: 30px;
-            padding-bottom: 20px;
-            color: #ffa396;
-            box-sizing: border-box;
-        }
-        .show_case_item3:hover{
-            border-top: 1px solid #ffa396;
-            border-bottom: 1px solid black;
-        }
-        .show_case_item2 ion-icon{
+
+        .browse-title p {
             font-size: 30px;
+        }
+
+        .browse {
+            padding-bottom: 50px;
+
+        }
+
+        .browse .txt {
+            text-align: center;
+            padding: 20px 20px 60px;
+
+        }
+        .browse .txt1{
+            text-align: center;
+            padding: 40px 20px 20px 60px;
+        }
+        .browse .txt h4 {
+            margin: 20px;
+
+        }
+        .browse .txt1 p{
+            margin-top: 50px;
+            border: #000 solid;
+            width: 50%;
+            margin-left: 30%;
+            font-weight: bold;
+            font-size: small;
+        }
+        .browse .txt p {
+            border: #000 solid;
+            width: 40%;
+            margin-left: 30%;
+            font-weight: bold;
+            font-size: small;
+        }
+
+        .browse .txt p:hover {
+            background-color: #000;
+            color: #fff;
+            cursor: pointer;
+
+        }
+        .browse .txt1 p:hover {
+            background-color: #000;
+            color: #fff;
+            cursor: pointer;
+
+        }
+        .productssale {
+            padding-bottom: 50px;
+        }
+
+        .productssale .txt {
+            text-align: center;
+            padding: 20px 20px 60px;
+        }
+
+        .productssale .txt div {
+            border: #000 solid;
+            width: 50%;
+            margin-left: 25%;
+
+        }
+
+        .productssale .txt p:last-child {
+            padding-top: 10px;
+        }
+
+        .productssale .txt div:hover {
+            background-color: #000;
+            color: #fff;
+            cursor: pointer;
+
+        }
+
+        .see-news {
+            padding-bottom: 50px;
+        }
+
+        .see-news .txt {
+            text-align: center;
+        }
+
+        .see-news .read {
+            border: #000 solid;
+            width: 50%;
+            margin-left: 25%;
+        }
+
+        .see-news .read:hover {
+            background-color: #000;
+            color: #fff;
+            cursor: pointer;
+
+        }
+
+        .fproducts {
+            padding-bottom: 50px;
+        }
+
+        .fproducts .txt {
+            text-align: center;
+            padding: 20px 20px 65px;
+        }
+
+        .fproducts .txt div {
+            border: #000 solid;
+            width: 50%;
+            margin-left: 25%;
+
+        }
+
+        .fproducts .txt p:last-child {
+            padding-top: 10px;
+        }
+
+        .fproducts .txt div:hover {
+            background-color: #000;
+            color: #fff;
+            cursor: pointer;
+
+        }
+
+        .footer {
+            text-align: center;
+            background-color: rgb(208, 233, 231);
+            padding: 100px 0 100px;
+        }
+
+        .footer h3 {
+            padding-bottom: 20px;
+        }
+
+
+        .footer h4 {
+            font-weight: lighter;
+        }
+
+        .footer ul {
+            display: flex;
+            list-style: none;
+            padding-left:7%;
+        }
+
+        .footer a {
+            color: #000;
+            font-size: 25px;
+            border: #000 solid;
+            border-radius: 50%;
+            padding: 10px;
+        }
+
+        .footer-nav {
+            padding: 100px 0;
+            background-color: #000;
+            color: #aaa;
+        }
+
+        .footer-nav img {
+            padding-bottom: 20px;
+        }
+
+        .footer-nav h3 {
+            font-size: 20px;
+            color: #fff;
+            padding-bottom: 20px;
+        }
+
+        .footer-nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-nav li {
+            padding-bottom: 10px;
+
+        }
+
+        .footer-nav a {
+            color: #aaa;
+            text-decoration: none;
+        }
+
+        .footer-nav a:hover {
+            color: #7dd;
+        }
+        /* .dbreadcrumb{
+            margin: auto;
+        }
+        .breadcrumb{
+            margin: auto;
+        } */
+        @media screen and (max-width: 767px) {
+
+            .header-title input {
+                margin-left: -100px;
+
+            }
+
+            .dbreadcrumb {
+                display: none;
+            }
+
+            .footer input {
+                width: 50%;
+                margin-left: 10%;
+            }
+
+        }
+
+        @media screen and (min-width: 768px) {
+            .dropdown button:hover {
+                background-color: #fff;
+                color: #000;
+            }
+
+            .dbreadcrumb {
+                display: none;
+            }
+            .browse .col-12:first-child {
+                padding-left:15px;
+            }
+
+            .browse .col-12:nth-child(2) {
+                padding-right:15px;
+            }
+
+            .browse .col-12:nth-child(3) {
+                padding-left:15px;
+            }
+
+            .browse .col-12:last-child {
+                padding-right: 15px;
+            }
+
+            .footer form input {
+                margin-left: 30%;
+
+            }
+
+            .footer ul {
+                padding-left: 30%;
+            }
+
+
+            .footer li {
+                padding-right: 15px;
+            }
+        }
+
+        @media screen and (min-width: 1025px) {
+            .dropdown {
+                display: none;
+            }
+
+            .btn-secondary:hover {
+                color: #fff;
+                background-color: #5a6268;
+                border-color: white;
+            }
+
+            .dbreadcrumb {
+                display: block;
+            }
+
+            .breadcrumb {
+                display: flex;
+                background-color: #fff;
+                margin-left: 35%;
+            }
+
+            .breadcrumb li+li::before {
+                content: '/';
+                margin: 0 10px;
+            }
+
+            .hair-pic .pic {
+                height: 498px;
+                object-fit: cover;
+            }
+
+            .browse div[class*='col-'] {
+                padding: 0;
+            }
+
+            .browse .col-12:first-child {
+                padding: 0;
+            }
+
+            .browse .col-12:last-child {
+                padding: 0;
+            }
+
+            .browse .col-12:nth-child(2) {
+                padding: 0;
+            }
+
+            .browse .col-12:nth-child(3) {
+                padding: 0;
+            }
+
+            .browse .row {
+                margin: 0;
+            }
+
+            .footer form input {
+                margin-left: 40%;
+                /* margin-right: auto; */
+            }
+
+            .footer ul {
+                margin-left: 10%;
+            }
+
+        }
+
+        .dropdown button {
+            text-align: left;
+            border-color: #fff;
+            color: #000;
+            font-weight: bolder;
+            font-size: 30px;
+            background-color: #fff;
         }
     </style>
 </head>
 
 <body>
-
-    <div class="header">
-        <div class="row">
-            <div class="nav_header_btn col-6">
-                <ion-icon name="menu-outline"></ion-icon>
-            </div>
-            <div class="nav_header_search col-6">
-                <img src="https://scontent.frmq2-2.fna.fbcdn.net/v/t1.0-9/cp0/90212691_3022183891136055_6191878055120601088_n.jpg?_nc_cat=107&_nc_sid=8024bb&_nc_ohc=HRIyYp_hKjEAX8i1u-q&_nc_ht=scontent.frmq2-2.fna&oh=a96ad0b2034f245c44ee500cacd3a7ec&oe=5E9A59F2"
-                    alt="購物車">
-                <div class="header_search">
-                    <form action="/search" method="get" class="search_form">
-                        <input id="search_field" type="text" placeholder="search store"></form>
+    <div class="header-title">
+        <div class="top-pannel">
+            <div class="container ">
+                <div class="row h-100 my-3">
+                    <input type="checkbox" id="menu-control">
+                    <label for="menu-control" class="menu-btn  mr-auto my-auto">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </label>
+                    <nav class="nav-btn-button">
+                        <a href="#">Currency</a>
+                        <a href="#">My Account</a>
+                        <a href="#">Wishlist</a>
+                        <a href="#">Checkout</a>
+                    </nav>
+                    <form class="form-inline my-auto">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                    </form>
                 </div>
             </div>
         </div>
+        <div class="dropdown-divider"></div>
+        <div class="container">
+            <div class="row">
+                <div class="logo m-auto">
+                    <img src="picture/logo.jpg" alt="logo">
+                </div>
+                <div class="title-icon ">
+                    <ul class="social_list">
+                        <li><a href="//twitter.com/TemplateMonster"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="//www.facebook.com/TemplateMonster"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="//www.youtube.com/user/TemplateMonsterCo"><i class="fab fa-youtube"></i></a></li>
+                        <li><a href="//www.pinterest.com/templatemonster/"><i class="fab fa-pinterest"></i></a></li>
+                        <li><a href="//google.com/+templatemonster"><i class="fab fa-google-plus-g"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
     </div>
-    <div class="header_title">
-        <div class="row">
-            <div class="title_pic">
-                <a href="#">
-                    <img src="//cdn.shopify.com/s/files/1/1711/1759/t/2/assets/logo.png?v=10135009575348054093"
-                        alt="圖片說明">
-                </a>
-                <div class="header_title_nav">
-                    <div class="row">
-                        <a href="">HOME</a>
-                        <a href="">PRODUCTS</a>
-                        <a href="">BLOG</a>
-                        <a href="">SALE</a>
-                        <a href="">ABOUT US</a>
-                        <a href="">CONTACT US</a>
+
+    <div class="dropdown w-100">
+        <button class="btn btn-secondary dropdown-toggle w-100" type="button" id="dropdownMenuButton"
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Dropdown button
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#">HOME</a>
+            <a class="dropdown-item" href="#">PRODUCTS</a>
+            <a class="dropdown-item" href="#">BLOG</a>
+            <a class="dropdown-item" href="#">SALE</a>
+            <a class="dropdown-item" href="#">ABOUT US</a>
+            <a class="dropdown-item" href="#">COUTACT US</a>
+
+        </div>
+    </div>
+
+    <div class="dbreadcrumb ">
+        <ul class="breadcrumb">
+            <li><a href="#"><strong>HOME</strong></a></li>
+            <li><a href="#"><strong>PRODUCTS</strong></a></li>
+            <li><a href="#"><strong>BLOG</strong></a></li>
+            <li><a href="#"><strong>SALE</strong></a></li>
+            <li><a href="#"><strong>ABOUT US</strong></a></li>
+            <li><a href="#"><strong>COUTACT US</strong></a></li>
+        </ul>
+    </div>
+
+
+
+    <div class="header-pic">
+        <div class="header-pic-item ">
+            <img src="picture/greeting_image.jpg" alt="" class="w-100">
+            <div class="header-pic-txt">
+                <p>JOIN OUR DISCOUNT CLUB & SAVE 25% ON EVERYTHING!</p>
+            </div>
+        </div>
+    </div>
+    <section class="menu">
+        <div class="container">
+            <div class="row">
+                <div class="menu-item1 col-12 col-md-4">
+                    <div class="txt my-auto">
+                        <h3>NEW ARRIVALS</h3>
+                        <p>SEE OUR LATEST MUST-HAVES >></p>
+                    </div>
+
+                </div>
+                <div class="menu-item2 col-12 col-md-4">
+                    <div class="txt">
+                        <h3>WE LOVE<i class="far fa-heart"></i>
+                        </h3>
+                        <p>CHECK OUT STYLISH FAVORITES >></p>
+                    </div>
+                </div>
+                <div class="menu-item3 col-12 col-md-4">
+                    <div class="txt">
+                        <h3>FREE SHIPPING</h3>
+                        <p>ON ALL 2016 COLLECTION >></p>
                     </div>
                 </div>
             </div>
-            <div class="title_icon">
-                <ion-icon name="logo-twitter"></ion-icon>
-                <ion-icon name="logo-facebook"></ion-icon>
-                <ion-icon name="logo-youtube"></ion-icon>
-                <ion-icon name="logo-pinterest"></ion-icon>
-                <ion-icon name="logo-google"></ion-icon>
+        </div>
+    </section>
+    <div class="hair-pic">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="pic">
+                        <img src="picture/promo_block_img.jpg" alt="" class="w-100 h-100">
+                    </div>
+                    <div class="txt">
+                        <h2>Hair</h2>
+                        <h3>Extensions</h3>
+                        <h4>add length &amp; volume in seconds</h4>
+                        <a href="#" class="hair-a">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="browse-title">
+        <p>
+            <strong>BROWSE</strong> OUR CATEGORIES
+        </p>
+    </section>
+    <div class="browse">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6 col-xl-3">
+                    <div class="pic">
+                        <img src="picture/category1_c699b5ea-b75e-4185-9a8e-2a65b0fc3814_430x396_crop_top.jpg"
+                            alt="MEN’S HAIR CARE" class="w-100">
+                    </div>
+                    <div class="txt">
+                        <h4>MEN’S HAIR CARE</h4>
+                        <p>7 products</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-xl-3">
+                    <div class="pic">
+                        <img src="picture/category2_430x396_crop_top.jpg" alt="
+                        HAIR STYLING" class="w-100">
+                    </div>
+                    <div class="txt1">
+                        <h4>HAIR STYLING</h4>
+                        <p>13 products</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-xl-3">
+                    <div class="pic">
+                        <img src="picture/category3_430x396_crop_top.jpg" alt="
+                        HAIR HEALTH TREATMENT" class="w-100">
+                    </div>
+                    <div class="txt">
+                        <h4>HAIR HEALTH TREATMENT</h4>
+                        <p>9 products</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-xl-3">
+                    <div class="pic">
+                        <img src="picture/category4_430x396_crop_top.jpg" alt="
+                        HAIR CARE FOR KIDS" class="w-100">
+                    </div>
+                    <div class="txt">
+                        <h4>HAIR CARE FOR KIDS</h4>
+                        <p>7 products</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="browse-title">
+        <p>
+            <strong>PRODUCTS</strong> ON SALE
+        </p>
+    </section>
+    <div class="productssale">
+        <div class="container">
+            <div class="row">
 
+                <div class="col-12 col-md-6 col-xl-3">
+                    <div class="pic">
+                        <img src="picture/argan_oil_hair_mask_01_370x370_crop_top.jpg" alt="
+                        Argan Oil Hair Mask" class="w-100">
+                    </div>
+                    <div class="txt">
+                        <p>Argan Oil Hair Mask</p>
+                        <h4>$60.00</h4>
+                        <div><i class="fas fa-shopping-cart"></i>Add to cart</div>
+                        <p><i class="far fa-heart"></i> <i class="far fa-eye"></i></p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-xl-3">
+                    <div class="pic">
+                        <img src="picture/garnier_fructis_01_370x370_crop_top.jpg" alt="
+                        Garnier Fructis" class="w-100">
+                    </div>
+                    <div class="txt">
+                        <p>Garnier Fructis</p>
+                        <h4>$90.00</h4>
+                        <div><i class="fas fa-shopping-cart"></i>Add to cart</div>
+                        <p><i class="far fa-heart"></i> <i class="far fa-eye"></i></p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-xl-3">
+                    <div class="pic">
+                        <img src="picture/herbal_essences_01_370x370_crop_top.jpg" alt="
+                        Herbal Essences" class="w-100">
+                    </div>
+                    <div class="txt">
+                        <p>Herbal Essences</p>
+                        <h4>$80.00</h4>
+                        <div><i class="fas fa-shopping-cart"></i>Add to cart</div>
+                        <p><i class="far fa-heart"></i> <i class="far fa-eye"></i></p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-xl-3">
+                    <div class="pic">
+                        <img src="picture/l_oreal_paris_studio_line_1_370x370_crop_top.jpg"
+                            alt="L'Oreal Paris Studio Line" class="w-100">
+                    </div>
+                    <div class="txt">
+                        <p>L'Oreal Paris Studio Line</p>
+                        <h4>$90.00</h4>
+                        <div><i class="fas fa-shopping-cart"></i>Add to cart</div>
+                        <p><i class="far fa-heart"></i> <i class="far fa-eye"></i></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <section class="browse-title">
+        <p>
+            <strong>SEE </strong> WHAT'S NEW ON OUR BLOG
+        </p>
+    </section>
+    <div class="see-news">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-4">
+                    <div class="txt">
+                        <h3>14 JANUARY</h3>
+                        <p>Posted by David Braun 2 Comments</p>
+                    </div>
+                    <div class="pic">
+                        <img src="picture/blog3_a7f4371f-e5f2-46ae-a3c0-01ff3da3296e_536x272_crop_top.jpg"
+                            alt="ou bring beauty to the world" class="w-100">
+                    </div>
+                    <div class="txt">
+                        <h3>You bring beauty to the world</h3>
+                        <p>Coco Chanel said that a woman who cuts her hair is about...</p>
+                        <div class="read">
+                            Read More
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="txt">
+                        <h3>14 JANUARY</h3>
+                        <p>Posted by David Braun 0 Comments</p>
+                    </div>
+                    <div class="pic">
+                        <img src="picture/blog2_536x272_crop_top.jpg" alt="Of best hair products here" class="w-100">
+                    </div>
+                    <div class="txt">
+                        <h3>Of best hair products here</h3>
+                        <p>Whoever you are, a professional hair stylist or a person who professionally...
+                        </p>
+                        <div class="read">
+                            Read More
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="txt">
+                        <h3>14 JANUARY</h3>
+                        <p>Posted by David Braun 0 Comments</p>
+                    </div>
+                    <div class="pic">
+                        <img src="picture/blog4_536x272_crop_top.jpg" alt="Or to be more precise...have..."
+                            class="w-100">
+                    </div>
+                    <div class="txt">
+                        <h3>Or to be more precise...have...</h3>
+                        <p>For saving your time, please use filters: brand, concerns, formulation, ingredient
+                            preferences,... </p>
+                        <div class="read">
+                            Read More
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="browse-title">
+        <p>
+            <strong>FEATURED</strong> PRODUCTS
+        </p>
+    </section>
+    <div class="fproducts">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6 col-xl-3">
+                    <div class="pic">
+                        <img src="picture/infiniti_pro_by_conair_hair_designer_3_in_1_styling_system_02_370x370_crop_top.jpg"
+                            alt="Infiniti Pro" class="w-100">
+                    </div>
+                    <div class="txt">
+                        <p>Infiniti Pro by Conair Hair Designer 3 in 1 Sty...</p>
+                        <h4>$50.00</h4>
+                        <div><i class="fas fa-shopping-cart"></i>Add to cart</div>
+                        <p><i class="far fa-heart"></i> <i class="far fa-eye"></i></p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-xl-3">
+                    <div class="pic">
+                        <img src="picture/instyler_ionic_styler_pro_ceramic_flat_iron_1_370x370_crop_top.jpg"
+                            alt="InStyler Ionic" class="w-100">
+                    </div>
+                    <div class="txt">
+                        <p>InStyler Ionic Styler Pro Ceramic Flat Iron</p>
+                        <h4>$66.00</h4>
+                        <div><i class="fas fa-shopping-cart"></i>Add to cart</div>
+                        <p><i class="far fa-heart"></i> <i class="far fa-eye"></i></p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-xl-3">
+                    <div class="pic">
+                        <img src="picture/jose_eber_wet_dry_flat_iron_straightener_01_370x370_crop_top.jpg"
+                            alt="Jose Eber Wet & Dry Flat Iron" class="w-100">
+                    </div>
+                    <div class="txt">
+                        <p>Jose Eber Wet & Dry Flat Iron Straightener</p>
+                        <h4>$88.00</h4>
+                        <div><i class="fas fa-shopping-cart"></i>Add to cart</div>
+                        <p><i class="far fa-heart"></i> <i class="far fa-eye"></i></p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-xl-3">
+                    <div class="pic">
+                        <img src="picture/glide_thru_detangler_hair_comb_or_brush_01_370x370_crop_top.jpg"
+                            alt=">Glide Thru Detangler " class="w-100">
+                    </div>
+                    <div class="txt">
+                        <p>Glide Thru Detangler Hair Comb or Brush</p>
+                        <h4>$56.00</h4>
+                        <div><i class="fas fa-shopping-cart"></i>Add to cart</div>
+                        <p><i class="far fa-heart"></i> <i class="far fa-eye"></i></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="browse-title">
+        <p>
+            <strong>FOLLOW</strong> US ON INSTAGRAM
+        </p>
+    </section>
+    <div class="footer">
+        <h3><strong>GET OUR SPECIAL OFFERS</strong></h3>
+        <h4>AND THE ULTIMATE HAIR CARE TIPS & TRICKS!</h4>
+        <form class="form-inline my-auto">
+            <input class="form-control" type="search" placeholder="Enter your email">
+            <button class="btn btn-outline-success ml-0 my-2 my-sm-0" type="submit">Subscribe</button>
+        </form>
+        <h3><strong>LET'S STAY CONNECTED</strong></h3>
+        <ul>
+            <li><a href="https://twitter.com/TemplateMonster"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="https://www.facebook.com/TemplateMonster"><i class="fab fa-facebook"></i></a></li>
+            <li><a href="https://www.youtube.com/user/TemplateMonsterCo"><i class="fab fa-youtube"></i></a></li>
+            <li><a href="https://www.templatemonster.com/demo/62235.html"><i class="fab fa-pinterest"></i></a></li>
+            <li><a href="https://www.templatemonster.com/demo/62235.html"><i class="fab fa-google-plus-g"></i></a></li>
+        </ul>
+
+    </div>
+
+    <div class="footer-nav">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-3 ">
+                    <img src="https://cdn.shopify.com/s/files/1/1711/1759/t/2/assets/footer_logo.png?v=15429984064853762523"
+                        alt="" class="w-100">
+                    <p>
+                        This web store was originally launched in 2002 and was then titled the Style Factory. This name
+                        was a perfect fit then, simply because we’ve always had our focus on our hair care & hair
+                        treatment products lineup.
+                    </p>
+                </div>
+                <div class="col-12 col-md-3">
+                    <h3>CATEGORIES</h3>
+                    <ul>
+                        <li><a href="#">Hair Styling</a></li>
+                        <li><a href="#">Men’s Hair Care</a></li>
+                        <li><a href="#">Hair Care For Kids</a></li>
+                        <li><a href="#">Hair Health</a></li>
+                        <li><a href="#">Treatment</a></li>
+                        <li><a href="#">Featured Products</a></li>
+                        <li><a href="#">Sale</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-3">
+                    <h3>MENU</h3>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Catalog</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Wishlist</a></li>
+                        <li><a href="#">Sitemap</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-3">
+                    <h3>CONTACT INFORMATION</h3>
+                    <p>4578 Marmora</p>
+                    <p>Road, Glasgow D04 89GR</p>
+                    <p>1(234) 567-9842</p>
+                    <a href="#">info@demolink.org</a>
+                </div>
             </div>
         </div>
     </div>
 
-    <div class="head_pic col-12">
-        <img src="https://cdn.shopify.com/s/files/1/1711/1759/t/2/assets/greeting_image.jpg?586185872078069732"
-            alt="圖片說明">
-        <div class="head_pic_txt">
-            <h1>JOIN OUR DISCOUNT CLUB & SAVE 25% ON EVERYTHING!</h1>
-        </div>
-        <button>
-            <h1>JOIN NOW</h1>
-            <ion-icon name="arrow-forward-circle-outline"></ion-icon>
-        </button>
-    </div>
-    <div class="show_case">
-        <div class="row">
-            <div class="show_case_item1 col-4">
-                <h1>NEW ARRIVALS</h1>
-                <P>SEE OUR LATEST MUST-HAVES >></P>
-            </div>
-            <div class="show_case_item2 col-4">
-                <h1>WE LOVE<ion-icon name="heart-outline"></h1>
-                    <P>
-                        CHECK OUT STYLISH FAVORITES >>
-                    </P>
-            </div>
-            <div class="show_case_item3 col-4">
-                <h1>FREE SHIPPING</ion-icon>
-                </h1>
-                <p>ON ALL 2016 COLLECTION >></p>
-            </div>
-        </div>
-    </div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+        </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+        </script>
 </body>
 
 </html>
