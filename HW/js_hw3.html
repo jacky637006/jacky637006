@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+    
+        .header {
+            text-align: center;
+            
+        }
+        .header input{
+            background-color: #aaa;
+            font-size: 20px;
+            width:410px;
+            height: 50px;
+            margin: 20px;
+        }
+        .tool{
+            text-align: center;   
+            
+        }
+        .tool input {
+            font-size: 20px;
+            width: 100px;
+            height: 100px;
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <div>
+            <input type="text" id="screenName" name="screenName" class="screen">
+            <br>
+            <input type="text" id="answer" name="answer" class="screen">
+        </div>
+    </div>
+
+    <div class="tool">
+        <input type="button" id="7" onclick="get(this.id)" value="7" class="buttons">
+        <input type="button" id="8" onclick="get(this.id)" value="8" class="buttons">
+        <input type="button" id="9" onclick="get(this.id)" value="9" class="buttons">
+
+        <input type="button" id="C" onclick="reset()" value="C" class="buttons">
+
+        <br>
+
+        <input type="button" id="4" onclick="get(this.id)" value="4" class="buttons">
+        <input type="button" id="5" onclick="get(this.id)" value="5" class="buttons">
+        <input type="button" id="6" onclick="get(this.id)" value="6" class="buttons">
+        <input type="button" id="x" onclick="get(this.id)" value="*" class="buttons">
+
+
+        <br>
+
+        <input type="button" id="1" onclick="get(this.id)" value="1" class="buttons">
+        <input type="button" id="2" onclick="get(this.id)" value="2" class="buttons">
+        <input type="button" id="3" onclick="get(this.id)" value="3" class="buttons">
+        <input type="button" id="÷" onclick="get(this.id)" value="/" class="buttons">
+
+
+
+
+        <br>
+        <input type="button" id="+" onclick="get(this.id)" value="+" class="buttons">
+        <input type="button" id="0" onclick="get(this.id)" value="0" class="buttons">
+        <input type="button" id="-" onclick="get(this.id)" value="-" class="buttons">
+        <input type="button" id="equal" onclick="equal()" value="=" class="buttons">
+
+
+
+
+    </div>
+
+    <script>
+        var num = 0;
+        function get(num) {
+
+            document.getElementById('screenName').value += document.getElementById(num).value;
+
+        }
+        function equal() {
+
+            document.getElementById("answer").value = eval(document.getElementById("screenName").value);
+            
+        }
+        function reset() {
+
+            document.getElementById("screenName").value = null;
+            document.getElementById("answer").value = null;
+
+        }
+    </script>
+
+</body>
+
+</html>
