@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        div {
+            text-align: center;
+        }
+
+        div input {
+            width: 60px;
+            height: 60px;
+            background-color: black;
+            color: white;
+        }
+
+        #input {
+            width: 200px;
+            height: 30px;
+            background-color: white;
+            color: black;
+        }
+        div button{
+            width: 60px;
+            height: 60px;
+            font-size: 20px;
+            background-color: black;
+            color: red;
+            box-sizing: border-box;
+        }
+        #random{
+            width: 100px;
+            height: 40px;
+            font-size: 20px;
+            margin: 10px;
+            background-color: aqua;
+            color: black;
+            border: none
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <input type="text" id='input' name="input">
+
+        <br>
+        <button onclick='ready()' id='random'>產生亂數</button>
+        <br>
+        <input type="button" id="7" onclick="get(this.id)" value="7" class="buttons">
+        <input type="button" id="8" onclick="get(this.id)" value="8" class="buttons">
+        <input type="button" id="9" onclick="get(this.id)" value="9" class="buttons">
+        <br>
+        <input type="button" id="4" onclick="get(this.id)" value="4" class="buttons">
+        <input type="button" id="5" onclick="get(this.id)" value="5" class="buttons">
+        <input type="button" id="6" onclick="get(this.id)" value="6" class="buttons">
+        <br>
+        <input type="button" id="1" onclick="get(this.id)" value="1" class="buttons">
+        <input type="button" id="2" onclick="get(this.id)" value="2" class="buttons">
+        <input type="button" id="3" onclick="get(this.id)" value="3" class="buttons">
+        <br>
+
+
+        <button onclick='reset()'>x</button>
+        <input type="button" id="0" onclick="get(this.id)" value="0" class="buttons">
+        <button onclick='check()'>O</button>
+
+        <p id="msg"></p><br>
+        <p>目前範圍:<span id='small'></span>~<span id='big'></span></p>
+    </div>
+</body>
+<script>
+    var result, input, msg;
+
+    var big = 100;
+    var small = 0;
+
+
+
+    function ready() {
+        result = Math.floor(Math.random() * 100) + 1;
+        console.log(result);
+        if (result >= 1 || result <= 100) {
+            msg = '遊戲開始';
+
+        } else {
+            result = Math.floor(Math.random() * 100) + 1;
+
+        }
+        document.getElementById('msg').innerHTML = msg;
+        document.getElementById('big').innerHTML = big;
+        document.getElementById('small').innerHTML = small;
+        document.getElementById('input').value = null;
+    }
+
+
+    function check() {
+        input = document.getElementById('input').value;
+        if (input < 0 || input > 100) {
+            msg = '請輸入有效的數字';
+        }
+        else if (result > input && input < big) {
+            msg = '比' + input + '大';
+            small = input;
+        } else if (result < input && input > small) {
+            msg = '比' + input + '小';
+            big = input;
+        } else if (result == input) {
+            msg = '恭喜猜對! 答案是' + result + '!';
+
+        } else if (input <= small || input >= big) {
+            msg = '請輸入提示內的數字';
+        }
+
+        console.log(big + '/' + small + '/' + input);
+        document.getElementById('msg').innerHTML = msg;
+        document.getElementById('big').innerHTML = big;
+        document.getElementById('small').innerHTML = small;
+
+    }
+    function reset() {
+        document.getElementById('input').value = null;
+    }
+
+
+
+    function get(num) {
+
+        document.getElementById('input').value += document.getElementById(num).value;
+
+    }
+
+
+</script>
+
+</html>
