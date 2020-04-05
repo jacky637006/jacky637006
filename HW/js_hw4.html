@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+    <style>
+        .playblock {
+            margin: auto;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container-fluid mt-2">
+
+        <div class="row">
+            <div class="col mt-2 d-flex justify-content-center">
+                <button type="button" class="btn btn-secondary" id="btn_start">開始遊戲</button>
+                <button type="button" class="btn btn-success" id="btn_answer" disabled="">看答案</button>
+                <button type="button" class="btn btn-danger" id="btn_renew" disabled="">重來</button>
+            </div>
+        </div>
+        <br>
+        <div class="playblock col-3  ">
+            <div class="d-flex flex-column justify-content-center">
+                <h3 class="d-flex justify-content-center">輸入四個數字(四個數不重複)</h3>
+                <input class=" form-control d-flex justify-content-center" type="text" placeholder="您輸入的數字"
+                    id="input_answer" disabled="">
+                <button type="button" class="btn btn-primary mt-2 d-flex justify-content-center" id="btn_checkanswer"
+                    disabled="">檢查</button>
+                <br>
+
+                <ul class="list-group mt-2" id="show_answer">
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var Answer;
+        var NumberRnd = [];
+
+        document.getElementById("btn_answer").disabled = true;
+        document.getElementById("btn_renew").disabled = true;
+        document.getElementById("btn_checkanswer").disabled = true;
+        document.getElementById("input_answer").disabled = true;
+
+
+        var cmdStart = document.getElementById("btn_start");//遊戲開始
+        cmdStart.onclick = function () {
+            document.getElementById("btn_answer").disabled = false;
+            document.getElementById("btn_renew").disabled = false;
+            document.getElementById("btn_checkanswer").disabled = false;
+            document.getElementById("input_answer").disabled = false;
+
+            for (var i = 0; i < 4; i++) {
+                NumberRnd[i] = Math.floor(Math.random() * 10);;
+                for (var j = 0; j < i; j++) {
+                    if (NumberRnd[i] == NumberRnd[j]) {
+                        i--;
+                        break;
+                    }
+                }
+            }
+            Answer = NumberRnd;
+        }
+
+        var cmdAnswer = document.getElementById("btn_answer");//看答案
+        cmdAnswer.onclick = function () {
+            document.getElementById("btn_start").disabled = true;
+            alert("答案是：" + Answer);
+        }
+
+        var cmdRenew = document.getElementById("btn_renew");//放棄重來
+        cmdRenew.onclick = function () {
+            window.location.reload();
+            alert("再來一次吧~");
+        }
+
+        var cmdCheckanswer = document.getElementById("btn_checkanswer");//檢查答案
+        cmdCheckanswer.onclick = function () {
+            document.getElementById("btn_start").disabled = true;
+
+
+            if (document.getElementById("input_answer").value.length == 4) {
+                var Dictionary = new Array();
+                var A = 0, B = 0;
+                var getInput = document.getElementById("input_answer").value;//取整數
+                var Thousand = Math.floor(getInput / 1000);
+                var Hundred = Math.floor((getInput % 1000) / 100);
+                var Ten = Math.floor((getInput % 100) / 10);
+                var Bit = Math.floor(getInput % 10);
+                Dictionary[0] = Thousand;
+                Dictionary[1] = Hundred;
+                Dictionary[2] = Ten;
+                Dictionary[3] = Bit;
+                if (Dictionary[0] == Dictionary[1] || Dictionary[0] == Dictionary[2] || Dictionary[0] == Dictionary[3] || Dictionary[1] == Dictionary[2] || Dictionary[1] == Dictionary[3] || Dictionary[2] == Dictionary[3]) {
+                    alert("請輸入四位數(不重複)");
+                    return;
+                }
+                var ul = document.querySelector("#show_answer");
+                for (var i = 0; i < 4; i++) {
+                    if (NumberRnd[i] == Dictionary[i]) {
+                        A++;
+                        if (A == 4) {
+                            console.log("過關！");
+                        }
+                    }
+                    else {
+                        for (var j = 0; j < 4; j++) {
+                            if (NumberRnd[i] == Dictionary[j]) {
+                                B++;
+                            }
+                        }
+                    }
+                }
+                var li = document.createElement("li");
+                li.className = "list-group-item d-flex justify-content-between align-items-center hover";
+                li.innerText = document.getElementById("input_answer").value;
+                var span = document.createElement("span");
+                span.className = "badge badge-secondary badge-pill text_size";
+                span.innerText = A + "A" + B + "B";
+                li.appendChild(span);
+                ul.appendChild(li);
+            }
+            else {
+                alert("請輸入四位數(不重複)");
+            }
+        }
+
+    </script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        varegrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        varegrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        varegrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
