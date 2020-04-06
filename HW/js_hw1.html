@@ -28,17 +28,60 @@
         font-size: 30px;
     }
 
-    .nav input {
+    .nav button {
         margin-top: 15px;
         margin-bottom: 15px;
         margin-right: 15px;
-        width: 60px;
-        height: 60px;
+        width: 70px;
+        height: 70px;
     }
 
     .nav a {
         width: 200px;
         color: white;
+    }
+
+    .nav button {
+        border: 2px solid black;
+        border-radius: 20%;
+    }
+
+    
+
+    .nav button:nth-child(1) {
+        border: 2px solid yellow;
+    }
+
+    .nav button:nth-child(2) {
+        border: 2px solid black;
+    }
+
+    .nav button:nth-child(3) {
+        border: 2px solid red;
+    }
+
+    .nav button:nth-child(4) {
+        border: 2px solid silver
+    }
+
+    .nav button:nth-child(5) {
+        border: 2px solid green;
+    }
+
+    .nav button:nth-child(6) {
+        border: 2px solid plum;
+    }
+    .capacity button:nth-child(1) {
+        border: 2px solid black;
+        border-radius: 20%;
+    }
+    .capacity button:nth-child(2) {
+        border: 2px solid black;
+        border-radius: 20%;
+    }
+    .capacity button:nth-child(3) {
+        border: 2px solid black;
+        border-radius: 20%;
     }
 </style>
 
@@ -53,12 +96,12 @@
                 <p>選擇顏色</p>
             </div>
             <div class="d-flex justify-content-center">
-                <input type="button" value="黃色" onclick="Yellow()">
-                <input type="button" value="黑色" onclick="Black()">
-                <input type="button" value="紅色" onclick="Red()">
-                <input type="button" value="白色" onclick=" White()">
-                <input type="button" value="綠色" onclick="Green()">
-                <input type="button" value="紫色" onclick="Purple()">
+                <button class="btn" type="button" value="黃色" onclick="Yellow()">黃色</button>
+                <button class="btn" type="button" value="黑色" onclick="Black()">黑色</button>
+                <button class="btn" type="button" value="紅色" onclick="Red()">紅色</button>
+                <button class="btn" type="button" value="白色" onclick=" White()">銀色</button>
+                <button class="btn" type="button" value="綠色" onclick="Green()">綠色</button>
+                <button class="btn" type="button" value="紫色" onclick="Purple()">紫色</button>
 
 
 
@@ -66,10 +109,10 @@
             <div>
                 <p>選擇容量</p>
             </div>
-            <div>
-                <input type="button" value="64G" onclick="iphone11_64()">
-                <input type="button" value="128G" onclick="iphone11_128()">
-                <input type="button" value="256G" onclick="iphone11_256()">
+            <div class="capacity">
+                <button class="btn" type="button" value="64G" onclick="iphone11_64()">64G</button>
+                <button class="btn" type="button" value="128G" onclick="iphone11_128()">128G</button>
+                <button class="btn" type="button" value="256G" onclick="iphone11_256()">256G</button>
 
             </div>
 
