@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+</head>
+<style>
+    .all {
+        display: flex;
+    }
+
+    .nav {
+        display: flex;
+        flex-direction: column;
+        padding: 100px;
+
+    }
+
+    .nav p {
+        font-size: 30px;
+    }
+
+    .nav input {
+        margin-top: 15px;
+        margin-bottom: 15px;
+        margin-right: 15px;
+        width: 60px;
+        height: 60px;
+    }
+
+    .nav a {
+        width: 200px;
+        color: white;
+    }
+</style>
+
+<body>
+
+    <div class="all">
+        <div id="photo">
+            <img src="https://bs2020-01.azurewebsites.net/Fake-Apple/img/iphone11-select-2019-family.png" alt="">
+        </div>
+        <div class="nav">
+            <div>
+                <p>選擇顏色</p>
+            </div>
+            <div class="d-flex justify-content-center">
+                <input type="button" value="黃色" onclick="Yellow()">
+                <input type="button" value="黑色" onclick="Black()">
+                <input type="button" value="紅色" onclick="Red()">
+                <input type="button" value="白色" onclick=" White()">
+                <input type="button" value="綠色" onclick="Green()">
+                <input type="button" value="紫色" onclick="Purple()">
+
+
+
+            </div>
+            <div>
+                <p>選擇容量</p>
+            </div>
+            <div>
+                <input type="button" value="64G" onclick="iphone11_64()">
+                <input type="button" value="128G" onclick="iphone11_128()">
+                <input type="button" value="256G" onclick="iphone11_256()">
+
+            </div>
+
+            <div id="money">
+                <h1>NT$</h1>
+
+            </div>
+            <a href="" class="btn border bg-primary" desabled>加入購物車</a>
+        </div>
+    </div>
+
+
+
+
+
+
+    <script>
+
+        phone_y = ""
+        function Yellow() {
+
+            phone_y = "<img src='https://bs2020-01.azurewebsites.net/Fake-Apple/img/iphone-yellow.png'>";
+            document.getElementById("photo").innerHTML = phone_y;
+        }
+        phone_r = ""
+        function Red() {
+
+            phone_r = "<img src='https://bs2020-01.azurewebsites.net/Fake-Apple/img/iphone-red.png'>";
+            document.getElementById("photo").innerHTML = phone_r;
+        }
+        phone_b = ""
+        function Black() {
+
+            phone_b = "<img src='https://hsulei.azurewebsites.net/Apple/apple-pic/iphone11-black-select-2019.png'>";
+            document.getElementById("photo").innerHTML = phone_b;
+        }
+        phone_w = ""
+        function White() {
+
+            phone_w = "<img src='https://hsulei.azurewebsites.net/Apple/apple-pic/iphone11-white-select-2019.png'>";
+            document.getElementById("photo").innerHTML = phone_w;
+        }
+        phone_g = ""
+        function Green() {
+
+            phone_g = "<img src='https://hsulei.azurewebsites.net/Apple/apple-pic/iphone11-green-select-2019.png'>";
+            document.getElementById("photo").innerHTML = phone_g;
+        }
+        phone_p = ""
+        function Purple() {
+
+            phone_p = "<img src='https://hsulei.azurewebsites.net/Apple/apple-pic/iphone11-purple-select-2019.png'>";
+            document.getElementById("photo").innerHTML = phone_p;
+        }
+
+
+        function iphone11_64() {
+            var h1 = document.getElementsByTagName("h1")[0];
+            h1.innerHTML = "$24900";
+        }
+        function iphone11_128() {
+            var h1 = document.getElementsByTagName("h1")[0];
+            h1.innerHTML = "$26900";
+        }
+        function iphone11_256() {
+            var h1 = document.getElementsByTagName("h1")[0];
+            h1.innerHTML = "$30400";
+        }
+
+
+
+    </script>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
