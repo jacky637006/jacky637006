@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Simple Map</title>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <style>
+        /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+        #map {
+            height: 100%;
+        }
+
+        /* Optional: Makes the sample page fill the window. */
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="map"></div>
+    <script>
+        function initMap() {
+            var myLatLng = { lat: 24.757227, lng: 120.952295 };
+
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 10,
+                center: myLatLng
+            });
+
+            var marker = new google.maps.Marker({
+                position: myLatLng,
+                map: map,
+                title: 'Hello World!'
+            });
+
+            $.ajax({
+                type: "Get",
+                url: "https://findmasks.herokuapp.com/places",
+                success: function (response) {
+
+                    let longitude = [];
+                    let latitude = [];
+                    let maskCount = [];
+                    // let childmaskCount= [];
+                    for (var i = 0; i < response.features.length; i++) {
+                        longitude[i] = response.features[i].geometry.coordinates[1];
+                        latitude[i] = response.features[i].geometry.coordinates[0];
+
+                        maskCount[i] = response.features[i].properties.masksLeft;
+                        if (maskCount[i] <= 100) {
+                            markers = new google.maps.Marker({
+                                position: { lat: longitude[i], lng: latitude[i] },
+                                map: map,
+                                icon: {
+                                    url: "iconfinder_lowercase_letter_x_red_3052270.png",
+                                    
+                                }
+                            })
+                        }
+                        else {
+                            markers = new google.maps.Marker({
+                                position: { lat: longitude[i], lng: latitude[i] },
+                                map: map,
+                                icon: {
+                                    url: "iconfinder_virus-19_5862571 (1).png",
+                                    
+                                }
+                            })
+                        };
+                    }
+                }
+            });
+        }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAlKWP4uWjQIR3WDAWLAu6rUhBfc3_ppag&callback=initMap"
+        async defer></script>
+</body>
+
+</html>
