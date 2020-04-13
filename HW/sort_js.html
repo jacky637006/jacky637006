@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>ipad清單</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+
+        table {
+            width: 100%;
+            text-align: center;
+            border: 2px solid white;
+        }
+
+        tr {
+            border: 2px solid white;
+        }
+
+        td {
+            border: 2px solid white;
+            font-size: 30px;
+
+        }
+        tr:nth-child(even) {
+            background-color: orange;
+            color: #ddd;
+        }
+        th {
+            border: 2px solid white;
+            background-color: orange;
+            color: white;
+            font-size: 30px;
+            padding: 10px;
+        }
+
+        th:hover {
+            cursor: pointer;
+
+        }
+    </style>
+</head>
+<div class="root" id="div">
+    
+</div>
+
+<body>
+    <script>
+        let products = "";
+
+        window.onload = function getjson() {
+            let xhr = new XMLHttpRequest();
+            xhr.onload = function () {
+                products = JSON.parse(this.responseText);
+
+                GetKey(products.products);
+                Getelement(products.products);
+            }
+            xhr.open("GET", 'https://bs-frontend.azurewebsites.net/api/Apple/IPad');
+            xhr.send();
+        }
+
+        function GetKey(products) {
+            var div = document.getElementById('div');
+            var table = document.createElement('table');
+            var thead = document.createElement('thead');
+            var tr = document.createElement('tr');
+            var tbody = document.createElement('tbody');
+            table.setAttribute('id', 'table');
+            tbody.setAttribute('id', 'tbody');
+            
+
+            for (var i in products[0]) {
+                var th = document.createElement('th');
+                th.setAttribute('onclick', 'Sort(this)');
+                th.innerHTML = i;
+                tr.appendChild(th);
+            }
+            table.appendChild(tbody);
+            thead.appendChild(tr);
+            table.appendChild(thead);
+            div.appendChild(table);
+
+
+
+        }
+
+        function Getelement(products) {
+            var table = document.getElementById('table');
+
+            for (var i in products) {
+                var tr = document.createElement('tr');
+                var value = Object.values(products[i]);
+                for (var j of value) {
+                    var td = document.createElement('td');
+                    td.innerHTML = j;
+                    tr.appendChild(td);
+                }
+                tbody.appendChild(tr);
+            }
+        }
+
+        var click = '';
+        function Sort(el) {
+
+            if (el.innerHTML != click) {
+                click = el.innerHTML;
+                return small_big(el.innerHTML);
+            }
+            else {
+                click = "";
+                return big_small(el.innerHTML);
+            }
+        }
+
+        function small_big(el) {
+            products.products.sort(function (a, b) {
+                if (a[el] > b[el]) { 
+                    return 1 
+                    }
+                if (a[el] < b[el]) { 
+                    return -1 
+                    }
+                return 0;
+            })
+            var tbody = document.getElementById('tbody');
+            tbody.innerHTML = "";
+            Getelement(products.products)
+        }
+
+
+        function big_small(el) {
+            products.products.sort(function (a, b) {
+                if (a[el] < b[el]) {
+                     return 1 
+                     }
+                if (a[el] > b[el]) { 
+                    return -1
+                     }
+                return 0;
+            })
+            var tbody = document.getElementById('tbody');
+            tbody.innerHTML = "";
+            Getelement(products.products)
+        }
+
+
+
+    </script>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
