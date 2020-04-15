@@ -1,0 +1,161 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <title>英雄聯盟LEAGUE-LEGENDS</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        h1 {
+            background-color: rgb(24, 24, 48);
+            padding: 30px 0px;
+            color: rgb(236, 241, 203);
+            font-weight: 600;
+            font-family: monospace, Microsoft JhengHei;
+            letter-spacing: 3px;
+            font-size: 50px;
+        }
+
+        #heroimg {
+            width: 100%;
+        }
+        body {
+            text-align: center;
+            background-color: rgb(205, 205, 231);
+            font-family: Microsoft JhengHei;
+        }
+
+        #namethemetxt {
+            font-size: 25px;
+            background-color: rgb(48, 47, 47);
+            color: aliceblue;
+            font-weight: 600;
+            transition: 1s;
+        }
+
+        #heroimgitem:hover #namethemetxt {
+            background-color: rgb(172, 172, 160);
+            color: rgb(15, 15, 43);
+        }
+
+        #modal-bodytxt {
+            white-space: pre-wrap;
+        }
+
+        .modal-content {
+            background-color: rgb(206, 218, 236);
+            font-weight: 900;
+        }
+
+        #smallitemname {
+            font-weight: 900;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>英雄聯盟</h1>
+    <!-- <div id=lol></div> -->
+    <!-- data-target="#exampleModalLong" -->
+    <!-- id="exampleModalLong" -->
+    <template id="template_lol">
+        <button type="button" class="btn bigbtn" data-toggle="modal" id="heroimgitem">
+            <img src="" alt="" id="heroimg">
+            <h2 id="namethemetxt"></h2>
+        </button>
+
+        <div class="modal fade bigbtnalert" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="smallitemname"></h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;
+                            </span>
+                        </button>
+                    </div>
+                    <div class="modal-body" id="modal-bodytxt">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </template>
+    <script>
+        var body = document.getElementsByTagName("body")[0];
+        var lolData = [];
+        // var lol = document.getElementById("lol");
+        function Getdata() {
+            $.ajax({
+                type: "GET",
+                url: "https://raw.githubusercontent.com/k1597/Homework/master/LOL/lol.json",
+                dataType: "json",
+                success: function (response) {
+                    lolData=response;
+                    for (let i = 0; i < lolData.length; i++) {
+                        Importdata(i, lolData[i].icon, lolData[i].id, lolData[i].id,
+                            lolData[i].stats);
+                    }
+                }
+            });
+        }
+
+        function Importdata(number, imgsrc, nametxt, smallnametxt, lifetxt, attacktxt, defensetxt) {
+            let template_lol = document.getElementById("template_lol");
+            let cloneContent = template_lol.content.cloneNode(true);
+            let bigbtn = cloneContent.getElementById("heroimgitem");
+            let bigbtnalert = cloneContent.querySelector(".bigbtnalert");
+            var idnumbera = `#exampleModalLong${number}`;
+            var idnumber = `exampleModalLong${number}`;
+            bigbtn.setAttribute("data-target", idnumbera);
+            bigbtnalert.setAttribute("id", idnumber);
+            let heroimg = cloneContent.getElementById("heroimg");
+            let name = cloneContent.getElementById("namethemetxt");
+            let smallnametxtgr = cloneContent.getElementById("smallitemname");
+            let modalbodytxt = cloneContent.getElementById("modal-bodytxt");
+            heroimg.setAttribute("src", imgsrc);
+            name.textContent = nametxt;
+            smallnametxtgr.textContent = smallnametxt;
+            let smallcontent = `${lifetxt}\n${attacktxt}\n${defensetxt}`;
+            modalbodytxt.textContent = smallcontent;
+            body.appendChild(cloneContent);
+        }
+        Getdata();
+    </script>
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+
+
+    <!-- <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script> -->
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
