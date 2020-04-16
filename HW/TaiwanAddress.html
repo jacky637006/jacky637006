@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>台灣</title>
+    <script src="../Modules/MyHelper.js"></script>
+</head>
+
+<body>
+    <h1>台灣 Address</h1>
+    <div id="information"></div>
+    <template id="templateRow">
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </template>
+
+    <script>
+
+        var table = document.createElement('table');
+        var tbody = document.createElement('tbody');
+
+        var information = document.getElementById('information');
+        information.appendChild(table);
+        table.appendChild(tbody);
+
+
+        var address;
+        window.onload = function () {
+            let xhr = new XMLHttpRequest();
+            xhr.onload = function () {
+                if (xhr.readyState == 4 && xhr.status == 200) {
+                  
+                    address = JSON.parse(this.responseText);
+                    let complete_code = [];
+            
+                    address.forEach(item => {
+                        let city = item.CityName;
+                        let districts = [];
+                        item.AreaList.forEach(item => {
+                            districts.push({ District: item.AreaName, Zipcode: item.ZipCode })
+                        });
+
+                        let city_item = { City: city, Districts: districts };
+                        complete_code.push(city_item);
+                    });
+
+                    complete_code.forEach(item => {
+                        // debugger;
+                        addTbody(Object.values(item));
+                    });
+
+                }
+                else {
+                    information.textContent = `發生錯誤，HTTP responce代碼: ${xhr.status}`;
+                }
+            }
+            xhr.open("GET", 'https://raw.githubusercontent.com/ttpss93068/homework-Javascript/master/TaiwanAddress.json');
+            
+            xhr.send();
+        }
+
+
+        function addTbody(rowArray) {
+            // console.log(rowArray);
+            let templateRow = document.getElementById('templateRow');
+
+            for (let i = 0; i < rowArray[1].length; i++) {
+                // debugger;
+                let cloneContent = templateRow.content.cloneNode(true);
+                let td = cloneContent.querySelectorAll('td');
+                let data = [];
+                data.push(rowArray[0]);
+                data.push(rowArray[1][i].District);
+                data.push(rowArray[1][i].Zipcode);
+                // debugger;
+                for (let j = 0; j < data.length; j++) {
+                    td[j].textContent = data[j];
+                }
+
+                tbody.appendChild(cloneContent);
+            }
+        }
+    </script>
+</body>
+
+</html>
