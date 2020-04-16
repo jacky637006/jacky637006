@@ -98,7 +98,7 @@
                     lolData = response;
                     for (let i = 0; i < lolData.length; i++) {
                         Importdata(i, lolData[i].icon, lolData[i].id, lolData[i].id, lolData[i].stats.hp,lolData[i].stats.attackdamage,lolData[i].stats.mp,lolData[i].stats.mpperlevel
-                        );
+                        ,lolData[i].stats.movespeed,lolData[i].stats.attackrange);
 
                     }
                 }
@@ -108,7 +108,7 @@
 
 
 
-        function Importdata(number, img_src, nametxt, smallnametxt, hptxt, attacktxt, mptxt,mpperleveltxt) {
+        function Importdata(number, img_src, nametxt, smallnametxt, hptxt, attacktxt, mptxt,mpperleveltxt,movespeedtxt,attackrangetxt) {
             let template_lol = document.getElementById("template_lol");
             let cloneContent = template_lol.content.cloneNode(true);
             let bigbtn = cloneContent.getElementById("hero_item");
@@ -124,7 +124,7 @@
             heroimg.setAttribute("src", img_src);
             name.textContent = nametxt;
             smallnametxtgr.textContent = smallnametxt;
-            let smallcontent = `${hptxt}\n${attacktxt}\n${mptxt}每級提升${mpperleveltxt}點mp`;
+            let smallcontent = `${hptxt}\n${attacktxt}\n${mptxt}每級提升${mpperleveltxt}點mp\n移動速度${movespeedtxt}\n${attackrangetxt}`;
             modalbodytxt.textContent = smallcontent;
             body.appendChild(cloneContent);
         }
