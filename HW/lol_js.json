@@ -11,7 +11,7 @@
       "stats": {
         "hp": 580,
         "hpperlevel": 85,
-        "mp": 100,
+        "mp": "魔力100",
         "mpperlevel": 0,
         "movespeed": 345,
         "armor": 33,
@@ -50,7 +50,7 @@
       "stats": {
         "hp": 526,
         "hpperlevel": 92,
-        "mp": 418,
+        "mp": "魔力418",
         "mpperlevel": 25,
         "movespeed": 330,
         "armor": 20.88,
@@ -88,7 +88,7 @@
       "stats": {
         "hp": 593,
         "hpperlevel": 90,
-        "mp": 200,
+        "mp": "魔力200",
         "mpperlevel": 0,
         "movespeed": 350,
         "armor": 31.38,
@@ -127,7 +127,7 @@
       "stats": {
         "hp": 613.36,
         "hpperlevel": 106,
-        "mp": 278.84,
+        "mp": "魔力278.84",
         "mpperlevel": 38,
         "movespeed": 330,
         "armor": 44,
@@ -166,7 +166,7 @@
       "stats": {
         "hp": 613.12,
         "hpperlevel": 84,
-        "mp": 287.2,
+        "mp": "魔力287.2",
         "mpperlevel": 40,
         "movespeed": 335,
         "armor": 33,
@@ -205,7 +205,7 @@
       "stats": {
         "hp": 480,
         "hpperlevel": 82,
-        "mp": 495,
+        "mp": "魔力495",
         "mpperlevel": 25,
         "movespeed": 325,
         "armor": 21.22,
@@ -243,7 +243,7 @@
       "stats": {
         "hp": 524,
         "hpperlevel": 88,
-        "mp": 418,
+        "mp": "魔力418",
         "mpperlevel": 25,
         "movespeed": 335,
         "armor": 19.22,
@@ -282,7 +282,7 @@
       "stats": {
         "hp": 539,
         "hpperlevel": 85,
-        "mp": 280,
+        "mp": "魔力280",
         "mpperlevel": 32,
         "movespeed": 325,
         "armor": 26,
@@ -321,7 +321,7 @@
       "stats": {
         "hp": 562,
         "hpperlevel": 92,
-        "mp": 350,
+        "mp": "魔力350",
         "mpperlevel": 50,
         "movespeed": 325,
         "armor": 19,
@@ -360,7 +360,7 @@
       "stats": {
         "hp": 552,
         "hpperlevel": 92,
-        "mp": 438,
+        "mp": "魔力438",
         "mpperlevel": 21,
         "movespeed": 335,
         "armor": 19.04,
@@ -399,7 +399,7 @@
       "stats": {
         "hp": 535,
         "hpperlevel": 89,
-        "mp": 350,
+        "mp": "魔力350",
         "mpperlevel": 50,
         "movespeed": 330,
         "armor": 34,
@@ -438,7 +438,7 @@
       "stats": {
         "hp": 582.6,
         "hpperlevel": 95,
-        "mp": 267.2,
+        "mp": "魔力267.2",
         "mpperlevel": 40,
         "movespeed": 325,
         "armor": 44,
@@ -476,7 +476,7 @@
       "stats": {
         "hp": 519.68,
         "hpperlevel": 88,
-        "mp": 469,
+        "mp": "魔力469",
         "mpperlevel": 21,
         "movespeed": 340,
         "armor": 21.88,
@@ -515,7 +515,7 @@
       "stats": {
         "hp": 576.16,
         "hpperlevel": 87,
-        "mp": 310.6,
+        "mp": "魔力310.6",
         "mpperlevel": 45,
         "movespeed": 335,
         "armor": 47,
@@ -553,7 +553,7 @@
       "stats": {
         "hp": 481,
         "hpperlevel": 91,
-        "mp": 313.7,
+        "mp": "魔力313.7",
         "mpperlevel": 35,
         "movespeed": 325,
         "armor": 28,
@@ -592,7 +592,7 @@
       "stats": {
         "hp": 575.6,
         "hpperlevel": 85,
-        "mp": 338.8,
+        "mp": "魔力338.8",
         "mpperlevel": 32,
         "movespeed": 340,
         "armor": 35,
@@ -630,7 +630,7 @@
       "stats": {
         "hp": 537,
         "hpperlevel": 87,
-        "mp": 418,
+        "mp": "魔力418",
         "mpperlevel": 31.5,
         "movespeed": 328,
         "armor": 25,
@@ -669,7 +669,7 @@
       "stats": {
         "hp": 574.4,
         "hpperlevel": 80,
-        "mp": 272.2,
+        "mp": "魔力272.2",
         "mpperlevel": 40,
         "movespeed": 345,
         "armor": 38,
@@ -707,7 +707,7 @@
       "stats": {
         "hp": 518,
         "hpperlevel": 87,
-        "mp": 350.16,
+        "mp": "魔力350.16",
         "mpperlevel": 34,
         "movespeed": 325,
         "armor": 28,
@@ -746,7 +746,7 @@
       "stats": {
         "hp": 582.24,
         "hpperlevel": 100,
-        "mp": 263,
+        "mp": "魔力263",
         "mpperlevel": 37.5,
         "movespeed": 340,
         "armor": 39,
@@ -785,7 +785,7 @@
       "stats": {
         "hp": 594,
         "hpperlevel": 95,
-        "mp": 372,
+        "mp": "魔力372",
         "mpperlevel": 20,
         "movespeed": 345,
         "armor": 31,
@@ -823,7 +823,7 @@
       "stats": {
         "hp": 574,
         "hpperlevel": 88,
-        "mp": 360.56,
+        "mp": "魔力360.56",
         "mpperlevel": 39,
         "movespeed": 330,
         "armor": 29,
@@ -862,7 +862,7 @@
       "stats": {
         "hp": 582.52,
         "hpperlevel": 89,
-        "mp": 0,
+        "mp": "魔力0",
         "mpperlevel": 0,
         "movespeed": 345,
         "armor": 36,
@@ -901,7 +901,7 @@
       "stats": {
         "hp": 585,
         "hpperlevel": 85,
-        "mp": 280,
+        "mp": "魔力280",
         "mpperlevel": 50,
         "movespeed": 340,
         "armor": 32,
@@ -940,7 +940,7 @@
       "stats": {
         "hp": 534,
         "hpperlevel": 85,
-        "mp": 324,
+        "mp": "魔力324",
         "mpperlevel": 50,
         "movespeed": 325,
         "armor": 27,
@@ -979,7 +979,7 @@
       "stats": {
         "hp": 572,
         "hpperlevel": 84,
-        "mp": 315.6,
+        "mp": "魔力315.6",
         "mpperlevel": 42,
         "movespeed": 335,
         "armor": 37,
@@ -1018,7 +1018,7 @@
       "stats": {
         "hp": 491,
         "hpperlevel": 86,
-        "mp": 360.6,
+        "mp": "魔力360.6",
         "mpperlevel": 42,
         "movespeed": 325,
         "armor": 25,
@@ -1057,7 +1057,7 @@
       "stats": {
         "hp": 524.4,
         "hpperlevel": 80,
-        "mp": 500,
+        "mp": "魔力500",
         "mpperlevel": 28,
         "movespeed": 335,
         "armor": 30,
@@ -1096,7 +1096,7 @@
       "stats": {
         "hp": 550,
         "hpperlevel": 85,
-        "mp": 300,
+        "mp": "魔力300",
         "mpperlevel": 40,
         "movespeed": 345,
         "armor": 33,
@@ -1135,7 +1135,7 @@
       "stats": {
         "hp": 570,
         "hpperlevel": 98,
-        "mp": 317.2,
+        "mp": "魔力317.2",
         "mpperlevel": 37,
         "movespeed": 335,
         "armor": 22.412,
@@ -1174,7 +1174,7 @@
       "stats": {
         "hp": 562,
         "hpperlevel": 112,
-        "mp": 500,
+        "mp": "魔力500",
         "mpperlevel": 20,
         "movespeed": 335,
         "armor": 24,
@@ -1212,7 +1212,7 @@
       "stats": {
         "hp": 540,
         "hpperlevel": 82,
-        "mp": 282,
+        "mp": "魔力282",
         "mpperlevel": 40,
         "movespeed": 345,
         "armor": 35,
@@ -1251,8 +1251,8 @@
       "stats": {
         "hp": 616.28,
         "hpperlevel": 84.25,
-        "mp": 0,
-        "mpperlevel": 0,
+        "mp": "魔力0" ,
+       "mpperlevel": 0,
         "movespeed": 340,
         "armor": 36,
         "armorperlevel": 3,
@@ -1290,7 +1290,7 @@
       "stats": {
         "hp": 510,
         "hpperlevel": 65,
-        "mp": 100,
+        "mp": "魔力100",
         "mpperlevel": 0,
         "movespeed": 325,
         "armor": 32,
@@ -1329,7 +1329,7 @@
       "stats": {
         "hp": 583.52,
         "hpperlevel": 89,
-        "mp": 400,
+        "mp": "魔力400",
         "mpperlevel": 47,
         "movespeed": 330,
         "armor": 35,
@@ -1367,7 +1367,7 @@
       "stats": {
         "hp": 551.12,
         "hpperlevel": 92,
-        "mp": 322.2,
+        "mp": "魔力322.2",
         "mpperlevel": 40,
         "movespeed": 340,
         "armor": 33,
@@ -1406,7 +1406,7 @@
       "stats": {
         "hp": 580,
         "hpperlevel": 90,
-        "mp": 277.2,
+        "mp": "魔力277.2",
         "mpperlevel": 40,
         "movespeed": 345,
         "armor": 36,
@@ -1445,7 +1445,7 @@
       "stats": {
         "hp": 488,
         "hpperlevel": 87,
-        "mp": 385,
+        "mp": "魔力385",
         "mpperlevel": 20,
         "movespeed": 340,
         "armor": 19.04,
@@ -1484,7 +1484,7 @@
       "stats": {
         "hp": 585.6,
         "hpperlevel": 95,
-        "mp": 300,
+        "mp": "魔力300",
         "mpperlevel": 40,
         "movespeed": 340,
         "armor": 35,
@@ -1523,7 +1523,7 @@
       "stats": {
         "hp": 550,
         "hpperlevel": 85,
-        "mp": 350,
+        "mp": "魔力350",
         "mpperlevel": 30,
         "movespeed": 340,
         "armor": 34,
@@ -1562,7 +1562,7 @@
       "stats": {
         "hp": 585,
         "hpperlevel": 95,
-        "mp": 450,
+        "mp": "魔力450",
         "mpperlevel": 60,
         "movespeed": 325,
         "armor": 27,
@@ -1601,7 +1601,7 @@
       "stats": {
         "hp": 500,
         "hpperlevel": 70,
-        "mp": 350,
+        "mp": "魔力350",
         "mpperlevel": 64,
         "movespeed": 315,
         "armor": 28,
@@ -1640,7 +1640,7 @@
       "stats": {
         "hp": 571.2,
         "hpperlevel": 90,
-        "mp": 302.2,
+        "mp": "魔力302.2",
         "mpperlevel": 40,
         "movespeed": 340,
         "armor": 34,
@@ -1679,7 +1679,7 @@
       "stats": {
         "hp": 592.8,
         "hpperlevel": 85,
-        "mp": 338.8,
+        "mp": "魔力338.8",
         "mpperlevel": 32,
         "movespeed": 350,
         "armor": 36,
@@ -1718,7 +1718,7 @@
       "stats": {
         "hp": 576,
         "hpperlevel": 95,
-        "mp": 357.2,
+        "mp": "魔力357.2",
         "mpperlevel": 37,
         "movespeed": 335,
         "armor": 27,
@@ -1757,7 +1757,7 @@
       "stats": {
         "hp": 556,
         "hpperlevel": 91,
-        "mp": 300,
+        "mp": "魔力300",
         "mpperlevel": 50,
         "movespeed": 330,
         "armor": 24,
@@ -1795,7 +1795,7 @@
       "stats": {
         "hp": 531,
         "hpperlevel": 88,
-        "mp": 245,
+        "mp": "魔力245",
         "mpperlevel": 45,
         "movespeed": 325,
         "armor": 28,
@@ -1833,7 +1833,7 @@
       "stats": {
         "hp": 571,
         "hpperlevel": 86,
-        "mp": 344.88,
+        "mp": "魔力344.88",
         "mpperlevel": 38,
         "movespeed": 335,
         "armor": 28,
@@ -1871,7 +1871,7 @@
       "stats": {
         "hp": 534,
         "hpperlevel": 89,
-        "mp": 231.8,
+        "mp": "魔力231.8",
         "mpperlevel": 35,
         "movespeed": 325,
         "armor": 23,
@@ -1910,7 +1910,7 @@
       "stats": {
         "hp": 534,
         "hpperlevel": 95,
-        "mp": 374,
+        "mp": "魔力374",
         "mpperlevel": 50,
         "movespeed": 335,
         "armor": 20.384,
@@ -1948,7 +1948,7 @@
       "stats": {
         "hp": 528,
         "hpperlevel": 87,
-        "mp": 467,
+        "mp": "魔力467",
         "mpperlevel": 30.5,
         "movespeed": 335,
         "armor": 20.88,
@@ -1987,7 +1987,7 @@
       "stats": {
         "hp": 576,
         "hpperlevel": 90,
-        "mp": 397.6,
+        "mp": "魔力397.6",
         "mpperlevel": 67,
         "movespeed": 340,
         "armor": 23.376,
@@ -2026,7 +2026,7 @@
       "stats": {
         "hp": 602,
         "hpperlevel": 94,
-        "mp": 0,
+        "mp": "魔力0",
         "mpperlevel": 0,
         "movespeed": 340,
         "armor": 27.88,
@@ -2065,7 +2065,7 @@
       "stats": {
         "hp": 586,
         "hpperlevel": 105,
-        "mp": 375,
+        "mp": "魔力375",
         "mpperlevel": 25,
         "movespeed": 335,
         "armor": 26.88,
@@ -2104,7 +2104,7 @@
       "stats": {
         "hp": 585,
         "hpperlevel": 85,
-        "mp": 410,
+        "mp": "魔力410",
         "mpperlevel": 50,
         "movespeed": 340,
         "armor": 38,
@@ -2143,7 +2143,7 @@
       "stats": {
         "hp": 541,
         "hpperlevel": 84,
-        "mp": 200,
+        "mp": "魔力200",
         "mpperlevel": 0,
         "movespeed": 335,
         "armor": 29,
@@ -2182,7 +2182,7 @@
       "stats": {
         "hp": 572.8,
         "hpperlevel": 85,
-        "mp": 327.2,
+        "mp": "魔力327.2",
         "mpperlevel": 40,
         "movespeed": 350,
         "armor": 36,
@@ -2220,7 +2220,7 @@
       "stats": {
         "hp": 540,
         "hpperlevel": 85,
-        "mp": 300,
+        "mp": "魔力300",
         "mpperlevel": 35,
         "movespeed": 325,
         "armor": 29,
@@ -2259,7 +2259,7 @@
       "stats": {
         "hp": 340,
         "hpperlevel": 70,
-        "mp": 100,
+        "mp": "魔力100",
         "mpperlevel": 0,
         "movespeed": 345,
         "armor": 35,
@@ -2298,7 +2298,7 @@
       "stats": {
         "hp": 534,
         "hpperlevel": 88,
-        "mp": 322.2,
+        "mp": "魔力322.2",
         "mpperlevel": 40,
         "movespeed": 325,
         "armor": 24,
@@ -2337,7 +2337,7 @@
       "stats": {
         "hp": 528,
         "hpperlevel": 92,
-        "mp": 334,
+        "mp": "魔力334",
         "mpperlevel": 50,
         "movespeed": 340,
         "armor": 21.88,
@@ -2376,7 +2376,7 @@
       "stats": {
         "hp": 570.8,
         "hpperlevel": 85,
-        "mp": 200,
+        "mp": "魔力200",
         "mpperlevel": 0,
         "movespeed": 345,
         "armor": 33,
@@ -2415,7 +2415,7 @@
       "stats": {
         "hp": 576.16,
         "hpperlevel": 87,
-        "mp": 302.2,
+        "mp": "魔力302.2",
         "mpperlevel": 40,
         "movespeed": 335,
         "armor": 47,
@@ -2453,7 +2453,7 @@
       "stats": {
         "hp": 518,
         "hpperlevel": 87,
-        "mp": 475,
+        "mp": "魔力475",
         "mpperlevel": 30,
         "movespeed": 325,
         "armor": 20.216,
@@ -2491,7 +2491,7 @@
       "stats": {
         "hp": 571,
         "hpperlevel": 86,
-        "mp": 348.88,
+        "mp": "魔力348.88",
         "mpperlevel": 38,
         "movespeed": 335,
         "armor": 28,
@@ -2530,7 +2530,7 @@
       "stats": {
         "hp": 525,
         "hpperlevel": 74,
-        "mp": 350,
+        "mp": "魔力350",
         "mpperlevel": 55,
         "movespeed": 330,
         "armor": 28.22,
@@ -2569,7 +2569,7 @@
       "stats": {
         "hp": 490,
         "hpperlevel": 85,
-        "mp": 480,
+        "mp": "魔力480",
         "mpperlevel": 23.5,
         "movespeed": 330,
         "armor": 18.72,
@@ -2608,7 +2608,7 @@
       "stats": {
         "hp": 574.2,
         "hpperlevel": 90,
-        "mp": 282.2,
+        "mp": "魔力282.2",
         "mpperlevel": 40,
         "movespeed": 335,
         "armor": 37,
@@ -2647,7 +2647,7 @@
       "stats": {
         "hp": 537,
         "hpperlevel": 87,
-        "mp": 375,
+        "mp": "魔力375",
         "mpperlevel": 27.5,
         "movespeed": 335,
         "armor": 18,
@@ -2686,7 +2686,7 @@
       "stats": {
         "hp": 565,
         "hpperlevel": 95,
-        "mp": 377.28,
+        "mp": "魔力377.28",
         "mpperlevel": 43,
         "movespeed": 335,
         "armor": 39,
@@ -2725,7 +2725,7 @@
       "stats": {
         "hp": 598.56,
         "hpperlevel": 92,
-        "mp": 250.56,
+        "mp": "魔力250.56",
         "mpperlevel": 42,
         "movespeed": 355,
         "armor": 33,
@@ -2763,7 +2763,7 @@
       "stats": {
         "hp": 541,
         "hpperlevel": 91,
-        "mp": 325.84,
+        "mp": "魔力325.84",
         "mpperlevel": 35,
         "movespeed": 325,
         "armor": 28,
@@ -2802,7 +2802,7 @@
       "stats": {
         "hp": 577.8,
         "hpperlevel": 85,
-        "mp": 265.84,
+        "mp": "魔力265.84",
         "mpperlevel": 38,
         "movespeed": 345,
         "armor": 34,
@@ -2840,8 +2840,8 @@
       "stats": {
         "hp": 530,
         "hpperlevel": 78,
-        "mp": 0,
-        "mpperlevel": 0,
+        "mp": "魔力0" ,
+       "mpperlevel": 0,
         "movespeed": 325,
         "armor": 25,
         "armorperlevel": 3.75,
@@ -2879,7 +2879,7 @@
       "stats": {
         "hp": 559.48,
         "hpperlevel": 90,
-        "mp": 340.8,
+        "mp": "魔力340.8",
         "mpperlevel": 60,
         "movespeed": 335,
         "armor": 25.384,
@@ -2918,7 +2918,7 @@
       "stats": {
         "hp": 489.32,
         "hpperlevel": 74,
-        "mp": 377.24,
+        "mp": "魔力377.24",
         "mpperlevel": 43,
         "movespeed": 335,
         "armor": 29,
@@ -2957,7 +2957,7 @@
       "stats": {
         "hp": 561.2,
         "hpperlevel": 90,
-        "mp": 325.6,
+        "mp": "魔力325.6",
         "mpperlevel": 42,
         "movespeed": 350,
         "armor": 34,
@@ -2996,7 +2996,7 @@
       "stats": {
         "hp": 576.48,
         "hpperlevel": 86,
-        "mp": 400,
+        "mp": "魔力400",
         "mpperlevel": 47,
         "movespeed": 325,
         "armor": 35.46,
@@ -3035,7 +3035,7 @@
       "stats": {
         "hp": 545,
         "hpperlevel": 85,
-        "mp": 295.6,
+        "mp": "魔力295.6",
         "mpperlevel": 45,
         "movespeed": 335,
         "armor": 28,
@@ -3074,7 +3074,7 @@
       "stats": {
         "hp": 582.8,
         "hpperlevel": 85,
-        "mp": 273.8,
+        "mp": "魔力273.8",
         "mpperlevel": 35,
         "movespeed": 345,
         "armor": 36,
@@ -3113,7 +3113,7 @@
       "stats": {
         "hp": 590,
         "hpperlevel": 90,
-        "mp": 283.56,
+        "mp": "魔力283.56",
         "mpperlevel": 42,
         "movespeed": 345,
         "armor": 28,
@@ -3152,7 +3152,7 @@
       "stats": {
         "hp": 597.24,
         "hpperlevel": 93,
-        "mp": 315.6,
+        "mp": "魔力315.6",
         "mpperlevel": 42,
         "movespeed": 350,
         "armor": 35,
@@ -3191,7 +3191,7 @@
       "stats": {
         "hp": 530,
         "hpperlevel": 91,
-        "mp": 418,
+        "mp": "魔力418",
         "mpperlevel": 25,
         "movespeed": 325,
         "armor": 17.04,
@@ -3230,7 +3230,7 @@
       "stats": {
         "hp": 565.64,
         "hpperlevel": 90,
-        "mp": 340.6,
+        "mp": "魔力340.6",
         "mpperlevel": 45,
         "movespeed": 335,
         "armor": 33.04,
@@ -3269,7 +3269,7 @@
       "stats": {
         "hp": 579.16,
         "hpperlevel": 87,
-        "mp": 317.12,
+        "mp": "魔力317.12",
         "mpperlevel": 31,
         "movespeed": 355,
         "armor": 37,
@@ -3308,7 +3308,7 @@
       "stats": {
         "hp": 540,
         "hpperlevel": 90,
-        "mp": 280,
+        "mp": "魔力280",
         "mpperlevel": 40,
         "movespeed": 345,
         "armor": 38,
@@ -3347,7 +3347,7 @@
       "stats": {
         "hp": 600,
         "hpperlevel": 110,
-        "mp": 380,
+        "mp": "魔力380",
         "mpperlevel": 50,
         "movespeed": 330,
         "armor": 42,
@@ -3386,7 +3386,7 @@
       "stats": {
         "hp": 532.8,
         "hpperlevel": 85,
-        "mp": 268.8,
+        "mp": "魔力268.8",
         "mpperlevel": 35,
         "movespeed": 335,
         "armor": 32,
@@ -3424,7 +3424,7 @@
       "stats": {
         "hp": 510,
         "hpperlevel": 85,
-        "mp": 315,
+        "mp": "魔力315",
         "mpperlevel": 50,
         "movespeed": 335,
         "armor": 36,
@@ -3463,7 +3463,7 @@
       "stats": {
         "hp": 564.48,
         "hpperlevel": 86,
-        "mp": 310.44,
+        "mp": "魔力310.44",
         "mpperlevel": 33,
         "movespeed": 335,
         "armor": 36,
@@ -3501,7 +3501,7 @@
       "stats": {
         "hp": 570,
         "hpperlevel": 85,
-        "mp": 100,
+        "mp": "魔力100",
         "mpperlevel": 0,
         "movespeed": 335,
         "armor": 33,
@@ -3540,7 +3540,7 @@
       "stats": {
         "hp": 572.16,
         "hpperlevel": 87,
-        "mp": 100,
+        "mp": "魔力100",
         "mpperlevel": 0,
         "movespeed": 345,
         "armor": 35,
@@ -3579,8 +3579,8 @@
       "stats": {
         "hp": 585,
         "hpperlevel": 90,
-        "mp": 4,
-        "mpperlevel": 0,
+        "mp": "魔力4" ,
+       "mpperlevel": 0,
         "movespeed": 345,
         "armor": 34,
         "armorperlevel": 3,
@@ -3618,8 +3618,8 @@
       "stats": {
         "hp": 558.48,
         "hpperlevel": 86,
-        "mp": 0,
-        "mpperlevel": 0,
+        "mp": "魔力0" ,
+       "mpperlevel": 0,
         "movespeed": 340,
         "armor": 33,
         "armorperlevel": 3.2,
@@ -3657,7 +3657,7 @@
       "stats": {
         "hp": 589,
         "hpperlevel": 85,
-        "mp": 100,
+        "mp": "魔力100",
         "mpperlevel": 0,
         "movespeed": 345,
         "armor": 30.88,
@@ -3696,7 +3696,7 @@
       "stats": {
         "hp": 570.48,
         "hpperlevel": 98,
-        "mp": 400,
+        "mp": "魔力400",
         "mpperlevel": 50,
         "movespeed": 340,
         "armor": 21.552,
@@ -3735,7 +3735,7 @@
       "stats": {
         "hp": 560,
         "hpperlevel": 88,
-        "mp": 400,
+        "mp": "魔力400",
         "mpperlevel": 40,
         "movespeed": 340,
         "armor": 31,
@@ -3773,7 +3773,7 @@
       "stats": {
         "hp": 587,
         "hpperlevel": 89,
-        "mp": 297.2,
+        "mp": "魔力297.2",
         "mpperlevel": 40,
         "movespeed": 350,
         "armor": 30,
@@ -3811,7 +3811,7 @@
       "stats": {
         "hp": 540,
         "hpperlevel": 85,
-        "mp": 400,
+        "mp": "魔力400",
         "mpperlevel": 0,
         "movespeed": 340,
         "armor": 34,
@@ -3850,7 +3850,7 @@
       "stats": {
         "hp": 595,
         "hpperlevel": 95,
-        "mp": 100,
+        "mp": "魔力100",
         "mpperlevel": 0,
         "movespeed": 350,
         "armor": 38,
@@ -3889,7 +3889,7 @@
       "stats": {
         "hp": 580,
         "hpperlevel": 85,
-        "mp": 290.6,
+        "mp": "魔力290.6",
         "mpperlevel": 45,
         "movespeed": 345,
         "armor": 37,
@@ -3928,7 +3928,7 @@
       "stats": {
         "hp": 542.64,
         "hpperlevel": 73,
-        "mp": 325.6,
+        "mp": "魔力325.6",
         "mpperlevel": 42,
         "movespeed": 345,
         "armor": 32,
@@ -3966,7 +3966,7 @@
       "stats": {
         "hp": 532,
         "hpperlevel": 88,
-        "mp": 284,
+        "mp": "魔力284",
         "mpperlevel": 50,
         "movespeed": 335,
         "armor": 26,
@@ -4005,7 +4005,7 @@
       "stats": {
         "hp": 601.28,
         "hpperlevel": 90,
-        "mp": 320,
+        "mp": "魔力320",
         "mpperlevel": 40,
         "movespeed": 335,
         "armor": 38,
@@ -4044,7 +4044,7 @@
       "stats": {
         "hp": 482.36,
         "hpperlevel": 77,
-        "mp": 340.6,
+        "mp": "魔力340.6",
         "mpperlevel": 45,
         "movespeed": 325,
         "armor": 28,
@@ -4083,7 +4083,7 @@
       "stats": {
         "hp": 529.04,
         "hpperlevel": 78,
-        "mp": 350.8,
+        "mp": "魔力350.8",
         "mpperlevel": 60,
         "movespeed": 325,
         "armor": 32,
@@ -4122,7 +4122,7 @@
       "stats": {
         "hp": 525,
         "hpperlevel": 90,
-        "mp": 468,
+        "mp": "魔力468",
         "mpperlevel": 28.5,
         "movespeed": 335,
         "armor": 22.72,
@@ -4161,7 +4161,7 @@
       "stats": {
         "hp": 523,
         "hpperlevel": 90,
-        "mp": 480,
+        "mp": "魔力480",
         "mpperlevel": 30,
         "movespeed": 330,
         "armor": 24.712,
@@ -4200,7 +4200,7 @@
       "stats": {
         "hp": 610,
         "hpperlevel": 95,
-        "mp": 325,
+        "mp": "魔力325",
         "mpperlevel": 40,
         "movespeed": 335,
         "armor": 47,
@@ -4239,7 +4239,7 @@
       "stats": {
         "hp": 532,
         "hpperlevel": 90,
-        "mp": 425,
+        "mp": "魔力425",
         "mpperlevel": 30,
         "movespeed": 340,
         "armor": 20,
@@ -4278,7 +4278,7 @@
       "stats": {
         "hp": 588,
         "hpperlevel": 95,
-        "mp": 377.2,
+        "mp": "魔力377.2",
         "mpperlevel": 37,
         "movespeed": 335,
         "armor": 30,
@@ -4317,7 +4317,7 @@
       "stats": {
         "hp": 575,
         "hpperlevel": 90,
-        "mp": 300,
+        "mp": "魔力300",
         "mpperlevel": 60,
         "movespeed": 340,
         "armor": 40,
@@ -4356,7 +4356,7 @@
       "stats": {
         "hp": 528,
         "hpperlevel": 90,
-        "mp": 334,
+        "mp": "魔力334",
         "mpperlevel": 20,
         "movespeed": 330,
         "armor": 24.3,
@@ -4395,7 +4395,7 @@
       "stats": {
         "hp": 560.52,
         "hpperlevel": 93,
-        "mp": 273.92,
+        "mp": "魔力273.92",
         "mpperlevel": 44,
         "movespeed": 335,
         "armor": 28,
@@ -4434,7 +4434,7 @@
       "stats": {
         "hp": 559,
         "hpperlevel": 88,
-        "mp": 246.76,
+        "mp": "魔力246.76",
         "mpperlevel": 32,
         "movespeed": 325,
         "armor": 26,
@@ -4473,7 +4473,7 @@
       "stats": {
         "hp": 616.28,
         "hpperlevel": 96,
-        "mp": 281.6,
+        "mp": "魔力281.6",
         "mpperlevel": 45,
         "movespeed": 350,
         "armor": 37,
@@ -4512,7 +4512,7 @@
       "stats": {
         "hp": 625.64,
         "hpperlevel": 98,
-        "mp": 100,
+        "mp": "魔力100",
         "mpperlevel": 0,
         "movespeed": 345,
         "armor": 33,
@@ -4550,7 +4550,7 @@
       "stats": {
         "hp": 534,
         "hpperlevel": 94,
-        "mp": 333,
+        "mp": "魔力333",
         "mpperlevel": 19,
         "movespeed": 335,
         "armor": 20.542,
@@ -4589,7 +4589,7 @@
       "stats": {
         "hp": 542,
         "hpperlevel": 87,
-        "mp": 287.2,
+        "mp": "魔力287.2",
         "mpperlevel": 40,
         "movespeed": 330,
         "armor": 27,
@@ -4628,7 +4628,7 @@
       "stats": {
         "hp": 593.32,
         "hpperlevel": 99,
-        "mp": 270.4,
+        "mp": "魔力270.4",
         "mpperlevel": 30,
         "movespeed": 345,
         "armor": 34,
@@ -4667,7 +4667,7 @@
       "stats": {
         "hp": 585,
         "hpperlevel": 88,
-        "mp": 300,
+        "mp": "魔力300",
         "mpperlevel": 45,
         "movespeed": 330,
         "armor": 39,
@@ -4706,7 +4706,7 @@
       "stats": {
         "hp": 549,
         "hpperlevel": 86,
-        "mp": 360.48,
+        "mp": "魔力360.48",
         "mpperlevel": 33,
         "movespeed": 330,
         "armor": 27,
@@ -4745,7 +4745,7 @@
       "stats": {
         "hp": 515,
         "hpperlevel": 89,
-        "mp": 231.8,
+        "mp": "魔力231.8",
         "mpperlevel": 35,
         "movespeed": 330,
         "armor": 23,
@@ -4783,7 +4783,7 @@
       "stats": {
         "hp": 505,
         "hpperlevel": 94,
-        "mp": 490,
+        "mp": "魔力490",
         "mpperlevel": 26,
         "movespeed": 340,
         "armor": 22.55,
@@ -4821,7 +4821,7 @@
       "stats": {
         "hp": 520,
         "hpperlevel": 88,
-        "mp": 469,
+        "mp": "魔力469",
         "mpperlevel": 21,
         "movespeed": 340,
         "armor": 21.88,
@@ -4860,7 +4860,7 @@
       "stats": {
         "hp": 585,
         "hpperlevel": 85,
-        "mp": 295,
+        "mp": "魔力295",
         "mpperlevel": 45,
         "movespeed": 340,
         "armor": 30,
@@ -4898,7 +4898,7 @@
       "stats": {
         "hp": 528.04,
         "hpperlevel": 90,
-        "mp": 405,
+        "mp": "魔力405",
         "mpperlevel": 25,
         "movespeed": 335,
         "armor": 22.72,
@@ -4937,7 +4937,7 @@
       "stats": {
         "hp": 537,
         "hpperlevel": 96,
-        "mp": 2,
+        "mp": "魔力2",
         "mpperlevel": 0,
         "movespeed": 330,
         "armor": 23,
@@ -4976,7 +4976,7 @@
       "stats": {
         "hp": 584.48,
         "hpperlevel": 86,
-        "mp": 270.4,
+        "mp": "魔力270.4",
         "mpperlevel": 30,
         "movespeed": 345,
         "armor": 35,
@@ -5015,7 +5015,7 @@
       "stats": {
         "hp": 550,
         "hpperlevel": 85,
-        "mp": 280,
+        "mp": "魔力280",
         "mpperlevel": 35,
         "movespeed": 335,
         "armor": 33,
@@ -5053,7 +5053,7 @@
       "stats": {
         "hp": 561,
         "hpperlevel": 86,
-        "mp": 340,
+        "mp": "魔力340",
         "mpperlevel": 40,
         "movespeed": 325,
         "armor": 28,
@@ -5092,7 +5092,7 @@
       "stats": {
         "hp": 526,
         "hpperlevel": 92,
-        "mp": 459,
+        "mp": "魔力459",
         "mpperlevel": 22,
         "movespeed": 340,
         "armor": 21.88,
@@ -5131,7 +5131,7 @@
       "stats": {
         "hp": 570,
         "hpperlevel": 92,
-        "mp": 273.8,
+        "mp": "魔力273.8",
         "mpperlevel": 35,
         "movespeed": 345,
         "armor": 35,
@@ -5170,7 +5170,7 @@
       "stats": {
         "hp": 523,
         "hpperlevel": 87,
-        "mp": 100,
+        "mp": "魔力100",
         "mpperlevel": 0,
         "movespeed": 345,
         "armor": 30,
@@ -5209,7 +5209,7 @@
       "stats": {
         "hp": 580,
         "hpperlevel": 100,
-        "mp": 300,
+        "mp": "魔力300",
         "mpperlevel": 40,
         "movespeed": 340,
         "armor": 39,
@@ -5248,7 +5248,7 @@
       "stats": {
         "hp": 615,
         "hpperlevel": 95,
-        "mp": 0,
+        "mp": "魔力0",
         "mpperlevel": 0,
         "movespeed": 340,
         "armor": 33,
@@ -5287,7 +5287,7 @@
       "stats": {
         "hp": 584,
         "hpperlevel": 85,
-        "mp": 200,
+        "mp": "魔力200",
         "mpperlevel": 0,
         "movespeed": 345,
         "armor": 32,
@@ -5325,7 +5325,7 @@
       "stats": {
         "hp": 536,
         "hpperlevel": 92,
-        "mp": 480,
+        "mp": "魔力480",
         "mpperlevel": 23.5,
         "movespeed": 325,
         "armor": 21.544,
@@ -5364,7 +5364,7 @@
       "stats": {
         "hp": 504,
         "hpperlevel": 82,
-        "mp": 452,
+        "mp": "魔力452",
         "mpperlevel": 30,
         "movespeed": 335,
         "armor": 24,
@@ -5403,7 +5403,7 @@
       "stats": {
         "hp": 560,
         "hpperlevel": 92,
-        "mp": 425,
+        "mp": "魔力425",
         "mpperlevel": 25,
         "movespeed": 340,
         "armor": 20.8,
@@ -5442,7 +5442,7 @@
       "stats": {
         "hp": 504,
         "hpperlevel": 79,
-        "mp": 418,
+        "mp": "魔力418",
         "mpperlevel": 25,
         "movespeed": 340,
         "armor": 29,
