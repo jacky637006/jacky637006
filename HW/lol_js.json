@@ -9,7 +9,7 @@
         "Tank"
       ],
       "stats": {
-        "hp": 580,
+        "hp": "血量580",
         "hpperlevel": 85,
         "mp": 100,
         "mpperlevel": 0,
@@ -1432,45 +1432,6 @@
         "y": 0
       },
       "description": "Hecarim is a spectral fusion of man and beast, cursed to ride down the souls of the living for all eternity. When the Blessed Isles fell into shadow, this proud knight was obliterated by the destructive energies of the Ruination, along with all his..."
-    },
-    {
-      "id": "heimerdinger",
-      "key": "74",
-      "name": "Heimerdinger",
-      "title": "the Revered Inventor",
-      "tags": [
-        "Mage",
-        "Support"
-      ],
-      "stats": {
-        "hp": 488,
-        "hpperlevel": 87,
-        "mp": 385,
-        "mpperlevel": 20,
-        "movespeed": 340,
-        "armor": 19.04,
-        "armorperlevel": 3,
-        "spellblock": 30,
-        "spellblockperlevel": 0.5,
-        "attackrange": 550,
-        "hpregen": 7,
-        "hpregenperlevel": 0.55,
-        "mpregen": 8,
-        "mpregenperlevel": 0.8,
-        "crit": 0,
-        "critperlevel": 0,
-        "attackdamage": 55.536,
-        "attackdamageperlevel": 2.7,
-        "attackspeedoffset": 0,
-        "attackspeedperlevel": 1.36
-      },
-      "icon": "http://ddragon.leagueoflegends.com/cdn/8.11.1/img/champion/Heimerdinger.png",
-      "sprite": {
-        "url": "http://ddragon.leagueoflegends.com/cdn/8.11.1/img/sprite/champion1.png",
-        "x": 336,
-        "y": 0
-      },
-      "description": "A brilliant yet eccentric yordle scientist, Professor Cecil B. Heimerdinger is one of the most innovative and esteemed inventors Piltover has ever known. Relentless in his work to the point of neurotic obsession, he thrives on answering the universe's..."
     },
     {
       "id": "illaoi",

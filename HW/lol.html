@@ -12,7 +12,7 @@
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <title>英雄聯盟LEAGUE-LEGENDS</title>
+    <title>LOL</title>
     <style>
         * {
             margin: 0;
@@ -20,23 +20,11 @@
             list-style: none;
         }
 
-        h1 {
-            background-color: rgb(24, 24, 48);
-            padding: 30px 0px;
-            color: rgb(236, 241, 203);
-            font-weight: 600;
-            font-family: monospace, Microsoft JhengHei;
-            letter-spacing: 3px;
-            font-size: 50px;
-        }
-
         #heroimg {
             width: 100%;
         }
         body {
             text-align: center;
-            background-color: rgb(205, 205, 231);
-            font-family: Microsoft JhengHei;
         }
 
         #namethemetxt {
@@ -47,9 +35,9 @@
             transition: 1s;
         }
 
-        #heroimgitem:hover #namethemetxt {
-            background-color: rgb(172, 172, 160);
-            color: rgb(15, 15, 43);
+        #hero_item:hover #namethemetxt {
+            background-color: white;
+            color: black;
         }
 
         #modal-bodytxt {
@@ -57,33 +45,32 @@
         }
 
         .modal-content {
-            background-color: rgb(206, 218, 236);
+            background-color: rgb(200, 150, 60);
             font-weight: 900;
         }
 
-        #smallitemname {
+        #aleart_itemname {
             font-weight: 900;
         }
     </style>
 </head>
 
 <body>
-    <h1>英雄聯盟</h1>
     <!-- <div id=lol></div> -->
     <!-- data-target="#exampleModalLong" -->
     <!-- id="exampleModalLong" -->
     <template id="template_lol">
-        <button type="button" class="btn bigbtn" data-toggle="modal" id="heroimgitem">
+        <button type="button" class="btn bigbtn exampleModalLongTitle" data-toggle="modal" id="hero_item">
             <img src="" alt="" id="heroimg">
             <h2 id="namethemetxt"></h2>
         </button>
 
-        <div class="modal fade bigbtnalert" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
+        <div class="modal fade btnalert" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
             aria-hidden="true">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="smallitemname"></h5>
+                        <h5 class="modal-title" id="aleart_itemname"></h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;
                             </span>
@@ -105,35 +92,35 @@
         function Getdata() {
             $.ajax({
                 type: "GET",
-                url: "https://raw.githubusercontent.com/k1597/Homework/master/LOL/lol.json",
+                url: "https://raw.githubusercontent.com/jacky637006/jacky637006/master/HW/lol_js.json",
                 dataType: "json",
                 success: function (response) {
                     lolData=response;
                     for (let i = 0; i < lolData.length; i++) {
                         Importdata(i, lolData[i].icon, lolData[i].id, lolData[i].id,
-                            lolData[i].stats);
+                            lolData[i].stats.hp,lolData[i].stats.hpperlevel,lolData[i].stats.mp,lolData[i].stats.mpperlevel,lolData[i].stats.movespeed);
                     }
                 }
             });
         }
 
-        function Importdata(number, imgsrc, nametxt, smallnametxt, lifetxt, attacktxt, defensetxt) {
+        function Importdata(number, img_src, nametxt, smallnametxt, hptxt, attacktxt, defensetxt) {
             let template_lol = document.getElementById("template_lol");
             let cloneContent = template_lol.content.cloneNode(true);
-            let bigbtn = cloneContent.getElementById("heroimgitem");
-            let bigbtnalert = cloneContent.querySelector(".bigbtnalert");
-            var idnumbera = `#exampleModalLong${number}`;
-            var idnumber = `exampleModalLong${number}`;
-            bigbtn.setAttribute("data-target", idnumbera);
-            bigbtnalert.setAttribute("id", idnumber);
+            let bigbtn = cloneContent.getElementById("hero_item");
+            let btnalert = cloneContent.querySelector(".btnalert");
+            var idnumber_btn = `#exampleModalLong${number}`;
+            var idnumber_aleart = `exampleModalLong${number}`;
+            bigbtn.setAttribute("data-target", idnumber_btn);
+            btnalert.setAttribute("id", idnumber_aleart);
             let heroimg = cloneContent.getElementById("heroimg");
             let name = cloneContent.getElementById("namethemetxt");
-            let smallnametxtgr = cloneContent.getElementById("smallitemname");
+            let smallnametxtgr = cloneContent.getElementById("aleart_itemname");
             let modalbodytxt = cloneContent.getElementById("modal-bodytxt");
-            heroimg.setAttribute("src", imgsrc);
+            heroimg.setAttribute("src", img_src);
             name.textContent = nametxt;
             smallnametxtgr.textContent = smallnametxt;
-            let smallcontent = `${lifetxt}\n${attacktxt}\n${defensetxt}`;
+            let smallcontent = `${hptxt}\n${attacktxt}\n${defensetxt}`;
             modalbodytxt.textContent = smallcontent;
             body.appendChild(cloneContent);
         }
