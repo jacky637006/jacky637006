@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+    <style>
+        
+        div {
+            width: 120px;
+            height: 120px;
+        }
+
+        .pic {
+            background-image: url(https://www.ecopetit.cat/wpic/mpic/144-1440992_arsenije-vujovic-gifs-find-share-on-giphy-buffalo.gif);
+        }
+
+        #d1 {
+            background-position: 0px 0px;
+        }
+
+        #d2 {
+            background-position: -120px 0px;
+        }
+
+        #d3 {
+            background-position: -240px 0px;
+        }
+
+        #d4 {
+            background-position: -360px 0px;
+        }
+
+
+
+
+        #d5 {
+            background-position: 0px -120px;
+        }
+
+        #d6 {
+            background-position: -120px -120px;
+        }
+
+        #d7 {
+            background-position: -240px -120px;
+        }
+
+        #d8 {
+            background-position: -360px -120px;
+        }
+
+
+
+
+        #d9 {
+            background-position: 0px -240px;
+        }
+
+        #d10 {
+            background-position: -120px -240px;
+        }
+
+        #d11 {
+            background-position: -240px -240px;
+        }
+
+        #d12 {
+            background-position: -360px -240px;
+        }
+
+
+
+        #d13 {
+            background-position: 0px -360px;
+        }
+
+        #d14 {
+            background-position: -120px -360px;
+        }
+
+        #d15 {
+            background-position: -240px -360px;
+        }
+
+        #d16 {
+            background-position: -360px -360px;
+        }
+        input{
+            background-color: black;
+            color: white;
+            font-size: 30px;
+            border-radius: 90%;
+            border: none;
+            margin-top: 20px;
+            margin-left: 50px;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <table border="1">
+        <tr>
+            <td>
+                <div id="block1" ondrop="drop(event)" ondragover="over(event)">
+                    <div class="pic" id="d1" draggable="true" ondragstart="drag(event)"></div>
+                </div>
+            </td>
+            <td>
+                <div id="block2" ondrop="drop(event)" ondragover="over(event)">
+                    <div class="pic" id="d2" draggable="true" ondragstart="drag(event)"></div>
+                </div>
+            </td>
+            <td>
+                <div id="block3" ondrop="drop(event)" ondragover="over(event)">
+                    <div class="pic" id="d3" draggable="true" ondragstart="drag(event)"></div>
+                </div>
+            </td>
+            <td>
+                <div id="block4" ondrop="drop(event)" ondragover="over(event)">
+                    <div class="pic" id="d4" draggable="true" ondragstart="drag(event)"></div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div id="block5" ondrop="drop(event)" ondragover="over(event)">
+                    <div class="pic" id="d5" draggable="true" ondragstart="drag(event)"></div>
+                </div>
+            </td>
+            <td>
+                <div id="block6" ondrop="drop(event)" ondragover="over(event)">
+                    <div class="pic" id="d6" draggable="true" ondragstart="drag(event)"></div>
+                </div>
+            </td>
+            <td>
+                <div id="block7" ondrop="drop(event)" ondragover="over(event)">
+                    <div class="pic" id="d7" draggable="true" ondragstart="drag(event)"></div>
+                </div>
+            </td>
+            <td>
+                <div id="block8" ondrop="drop(event)" ondragover="over(event)">
+                    <div class="pic" id="d8" draggable="true" ondragstart="drag(event)"></div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div id="block9" ondrop="drop(event)" ondragover="over(event)">
+                    <div class="pic" id="d9" draggable="true" ondragstart="drag(event)"></div>
+                </div>
+            </td>
+            <td>
+                <div id="block10" ondrop="drop(event)" ondragover="over(event)">
+                    <div class="pic" id="d10" draggable="true" ondragstart="drag(event)"></div>
+                </div>
+            </td>
+            <td>
+                <div id="block11" ondrop="drop(event)" ondragover="over(event)">
+                    <div class="pic" id="d11" draggable="true" ondragstart="drag(event)"></div>
+                </div>
+            </td>
+            <td>
+                <div id="block12" ondrop="drop(event)" ondragover="over(event)">
+                    <div class="pic" id="d12" draggable="true" ondragstart="drag(event)"></div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div id="block13" ondrop="drop(event)" ondragover="over(event)">
+                    <div class="pic" id="d13" draggable="true" ondragstart="drag(event)"></div>
+                </div>
+            </td>
+            <td>
+                <div id="block14" ondrop="drop(event)" ondragover="over(event)">
+                    <div class="pic" id="d14" draggable="true" ondragstart="drag(event)"></div>
+                </div>
+            </td>
+            <td>
+                <div id="block15" ondrop="drop(event)" ondragover="over(event)">
+                    <div class="pic" id="d15" draggable="true" ondragstart="drag(event)"></div>
+                </div>
+            </td>
+            <td>
+                <div id="block16" ondrop="drop(event)" ondragover="over(event)">
+                    <div class="pic" id="d16" draggable="true" ondragstart="drag(event)"></div>
+                </div>
+            </td>
+        </tr>
+    </table>
+
+
+    <input type="button" value="開始遊戲" onclick="radom()">
+
+    <input type="button" value="連結名稱" onclick="location.href='要前往的網頁連結'">
+
+    <script>
+
+        function drag(e) {
+            var id = e.target.id;
+            e.dataTransfer.setData("id", id);
+        }
+
+        function over(e) {
+            e.preventDefault();
+        }
+
+        function drop(e) {
+
+            var start = e.dataTransfer.getData("id");
+
+            var end = e.target.id;
+
+            var start_id = document.getElementById(start);
+
+            var end_id = document.getElementById(end);
+
+            var start_pic = start_id.parentNode;
+            //parentNode可以擁有子節點之物件
+            var end_pic = end_id.parentNode;
+
+
+            start_pic.appendChild(end_id);
+            end_pic.appendChild(start_id);
+
+            check();
+        }
+        function check() {
+            var z = 0;
+            var pics = document.getElementsByClassName("pic");
+            for (var i = 0; i < pics.length; i++) {
+                var pic = pics[i];
+                var div = pic.parentNode;
+
+                var pic_id = pic.getAttribute("id");
+                var div_id = div.getAttribute("id");
+                if (pic_id.replace("d", "") == div_id.replace("block", "")) {
+                    z++
+                } else {
+                    return;
+                }
+
+                console.log(z)
+            }
+            if (z == 16) {
+                alert("遊戲結束");
+            }
+        }
+
+        function radom() {
+            var pics = document.getElementsByClassName('pic');
+            for (var i = 0; i < 17; i++) {
+
+                var m = parseInt(Math.random() * 16);
+                var n = parseInt(Math.random() * 16);
+
+                var picmp = pics[m].parentNode;
+                var picnp = pics[n].parentNode;
+
+                picmp.appendChild(pics[n]);
+                picnp.appendChild(pics[m]);
+            }
+
+        }
+    </script>
+</body>
+
+</html>
