@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#heroimg {
+    width: 100%;
+}
+
+body {
+    text-align: center;
+}
+
+#namethemetxt {
+    font-size: 25px;
+    background-color: rgb(48, 47, 47);
+    color: aliceblue;
+    font-weight: 600;
+    transition: 1s;
+}
+
+#hero_item:hover #namethemetxt {
+    background-color: white;
+    color: black;
+}
+
+#modal-bodytxt {
+    white-space: pre-wrap;
+}
+
+.modal-content {
+    background-color: rgb(200, 150, 60);
+    font-weight: 900;
+}
+
+#aleart_itemname {
+    font-weight: 900;
+}
