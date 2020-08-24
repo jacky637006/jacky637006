@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/9a93cb04a1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <title>Document</title>
     <style>
         * {
@@ -13,7 +15,7 @@
             list-style: none;
         }
 
-        .header {}
+        /* .header {} */
 
         .top_txt {
             background-color: #3b3d42;
@@ -169,14 +171,9 @@
         }
 
         .our_history {
-            width: 100%;
-            display: flex;
-            margin: auto;
+            padding:0 15px;
             background-color: #eee;
-            justify-content: center;
-            padding: 30px 30px;
-            margin: 10px 10px;
-            box-sizing: border-box;
+           
         }
 
         .our_history_txt,
@@ -225,10 +222,7 @@
             background-color: black;
         }
 
-        .our_history_txt p {
-            /* color: #888; */
-        }
-
+       
         .wall {
             display: flex;
             flex-wrap: wrap;
@@ -290,8 +284,8 @@
         .recent_news_item {
             margin: auto;
             width: 400px;
-            padding: 0 20px;
-            margin: 10px 10px;
+            padding-right: -15px;
+            /* margin: 10px 10px; */
             box-sizing: border-box;
         }
 
@@ -575,78 +569,90 @@
 
     </div>
     <div class="our_services_borderline"></div>
-    <div class="our_services">
-        <h2>OUR SERVICES</h2>
-        <div class="our_services_item">
-            <div class="item">
-                <div class="pic">
-                    <img src="https://scontent.ftpe8-1.fna.fbcdn.net/v/t1.0-9/89897772_3015835455104232_2441644652432982016_n.jpg?_nc_cat=105&_nc_sid=8024bb&_nc_oc=AQk4dj4XVk7pXs1zCXeqDrVQMBlCHFNq4LuiVSlQ8dZVIL3xPZmej2xxOmAQDeLFkrM&_nc_ht=scontent.ftpe8-1.fna&oh=af9ac6fc2047be82d5d18179a84c8680&oe=5E976F1F"
-                        alt=""></div>
-                <div class="our_services_item_txt">
-                    <h2>BUILDING INFORMATION MODELING </h2>
-                    <p>Oftentimes physical and functional essence of any construction project needs to be represented
-                        digitally, in a 3D model format. In...</p>
+    <div class="col-12">
+        <h2 class="text-center">OUR SERVICES</h2>
+        <div class="justify-content-center container">
+            <div class="row">
+                <div class="col-md-5 col-12 item">
+                    <div class="col-5 pic">
+                        <img src="https://i.imgur.com/deRt1ku.jpg"
+                            alt=""></div>
+                    <div class="col-7 our_services_item_txt">
+                        <h2>BUILDING INFORMATION MODELING </h2>
+                        <p>Oftentimes physical and functional essence of any construction project needs to be
+                            represented
+                            digitally, in a 3D model format. In...</p>
+                    </div>
+                </div>
+                <div class="col-md-5 col-12 item">
+                    <div class="col-5 pic">
+                        <img src="https://i.imgur.com/Z9umedp.jpg"
+                            alt=""></div>
+                    <div class="col-7 our_services_item_txt">
+                        <h2>CONSTRUCTION SERVICES</h2>
+                        <p>
+                            Our customers love the pace/quality tempo that we show during each of the principal
+                            construction
+                            processes! We're comfortable with any...
+                        </p>
+                    </div>
                 </div>
             </div>
-            <div class="item">
-                <div class="pic">
-                    <img src="https://scontent.ftpe8-2.fna.fbcdn.net/v/t1.0-9/89959099_3015835448437566_1477767413259829248_n.jpg?_nc_cat=103&_nc_sid=8024bb&_nc_oc=AQmhCTlXIBYqF4rTc3bqQ951QhSxCvur4ZlRZI0Sl-wAK6zZwMKuRdpj-KpqFDSn6MI&_nc_ht=scontent.ftpe8-2.fna&oh=7eb5def40cbe00c709cdacda8003c39a&oe=5E97EE4E"
-                        alt=""></div>
-                <div class="our_services_item_txt">
-                    <h2>CONSTRUCTION SERVICES</h2>
-                    <p>
-                        Our customers love the pace/quality tempo that we show during each of the principal construction
-                        processes! We're comfortable with any...
-                    </p>
+            <div class="row">
+                <div class="col-md-5 col-12 item">
+                    <div class="col-5 pic">
+                        <img src="https://i.imgur.com/8XHD0yS.jpg"
+                            alt=""></div>
+                    <div class="col-7 our_services_item_txt">
+                        <h2>PRE-CONSTRUCTION SERVICES</h2>
+                        <p>We take our time on initial planning before any construction begins, to balance all the
+                            financial
+                            and
+                            efficiency issues beforehand.This...</p>
+                    </div>
+                </div>
+                <div class="col-md-5 col-12 item">
+                    <div class="col-5 pic">
+                        <img src="https://i.imgur.com/p9IFH9i.jpg"
+                            alt=""></div>
+                    <div class="col-7 our_services_item_txt">
+                        <h2>DESIGN-BUILD</h2>
+                        <p>If a project is not too complex, we may hire a designer-builder type of contractor, to make
+                            the
+                            longevity of...</p>
+                    </div>
                 </div>
             </div>
-            <div class="item">
-                <div class="pic">
-                    <img src="https://scontent.ftpe8-4.fna.fbcdn.net/v/t1.0-9/cp0/89942060_3015835451770899_3046551213655982080_n.jpg?_nc_cat=111&_nc_sid=8024bb&_nc_oc=AQnQJgdc3Gl0YpGqiNStTiJND_HmtUTWPIlH2wueMdbYTooyHoGvIwZWDN1VmUXzru4&_nc_ht=scontent.ftpe8-4.fna&oh=ec77ea52d3db4650278895ef8f614841&oe=5E982528"
-                        alt=""></div>
-                <div class="our_services_item_txt">
-                    <h2>PRE-CONSTRUCTION SERVICES</h2>
-                    <p>We take our time on initial planning before any construction begins, to balance all the financial
-                        and
-                        efficiency issues beforehand.This...</p>
+            <div class="row">
+                <div class="col-md-5 col-12 item">
+                    <div class="col-5 pic">
+                        <img src="https://i.imgur.com/dVVSnRV.jpg"
+                            alt=""></div>
+                    <div class="col-7 our_services_item_txt">
+                        <h2>CONSTRUCTION MANAGEMENT</h2>
+                        <p>Construction project management is essential. We're using the most time and iterations
+                            efficient
+                            life
+                            cycles for that.As you may know,...</p>
+                    </div>
                 </div>
-            </div>
-            <div class="item">
-                <div class="pic">
-                    <img src="https://scontent.ftpe8-3.fna.fbcdn.net/v/t1.0-9/84207185_3015835495104228_1604514187382358016_n.jpg?_nc_cat=106&_nc_sid=8024bb&_nc_oc=AQkWaKhD15_9cANckIDNTGoeMN1zFh9f2hrYygD0jYtzrqZEqhTib5Yrfnihyo5ZpSQ&_nc_ht=scontent.ftpe8-3.fna&oh=e47184ba1a59a7bd9d752d8b05af0bb8&oe=5E98E052"
-                        alt=""></div>
-                <div class="our_services_item_txt">
-                    <h2>DESIGN-BUILD</h2>
-                    <p>If a project is not too complex, we may hire a designer-builder type of contractor, to make the
-                        longevity of...</p>
-                </div>
-            </div>
-            <div class="item">
-                <div class="pic">
-                    <img src="https://scontent.ftpe8-1.fna.fbcdn.net/v/t1.0-9/cp0/90510580_3015835505104227_6271420746363305984_n.jpg?_nc_cat=108&_nc_sid=8024bb&_nc_oc=AQnsIrzFip2ukZIQc8o7BwuJKiAOPaHw4hwW5JnIOPG-MKCUQTBitRJrGU5Zndzwioo&_nc_ht=scontent.ftpe8-1.fna&oh=32d8d9ab3c3ff7b3cb978d23d482a71b&oe=5E975BB3"
-                        alt=""></div>
-                <div class="our_services_item_txt">
-                    <h2>CONSTRUCTION MANAGEMENT</h2>
-                    <p>Construction project management is essential. We're using the most time and iterations efficient
-                        life
-                        cycles for that.As you may know,...</p>
-                </div>
-            </div>
-            <div class="item">
-                <div class="pic">
-                    <img src="https://scontent.ftpe8-2.fna.fbcdn.net/v/t1.0-9/cp0/90461413_3015835508437560_2256554265172508672_n.jpg?_nc_cat=100&_nc_sid=8024bb&_nc_oc=AQmJya43zFHVZ11cEQxZHKBgn8ud0Br1dpOq59rQ-3BHf9LoQg_HEMwO7Vn-zD7tR1A&_nc_ht=scontent.ftpe8-2.fna&oh=4ff4feaa5266a5555d5e196a52e1b0b3&oe=5E981457"
-                        alt=""></div>
-                <div class="our_services_item_txt">
-                    <h2>GENERAL CONTRACTING</h2>
-                    <p>We have a long list of professional contractors, whom our engineers and architects enjoy to work
-                        with
-                        on a majority...</p>
+                <div class="col-md-5 col-12 item">
+                    <div class="col-5 pic">
+                        <img src="https://i.imgur.com/GkaP69m.jpg"
+                            alt=""></div>
+                    <div class="col-7 our_services_item_txt">
+                        <h2>GENERAL CONTRACTING</h2>
+                        <p>We have a long list of professional contractors, whom our engineers and architects enjoy to
+                            work
+                            with
+                            on a majority...</p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="our_history">
-        <div class="our_history_txt">
+    <div class="row col-12 our_history">
+        <div class="col-md-5 col-12 our_history_txt">
             <h2>OUR HISTORY</h2>
             <h4>OUR CONSTRUCTION COMPANY HAS BEEN FOUNDED 10 YEARS AGO, AT THE VERY PEAK OF THE BUILDING FRENZY IN THE
                 US…</h4>
@@ -656,7 +662,7 @@
                 immense!</p>
             <button>READ MORE</button>
         </div>
-        <div class="our_history_pic">
+        <div class="col-md-5 col-12 our_history_pic">
             <img src="picture/MANUFAXasset 4.png" alt="">
         </div>
     </div>
@@ -698,8 +704,8 @@
     <div class="recent_news_title">
         <h2>RECENT NEWS</h2>
     </div>
-    <div class="recent_news">
-        <div class="recent_news_item">
+    <div class="justify-content-center row">
+        <div class="col-md-3 col-12 recent_news_item">
             <div class="recent_news_item_pic">
                 <img src="https://ld-wp73.template-help.com/wordpress/prod_21256/v1/wp-content/uploads/2018/12/blog-27.jpg"
                     alt="">
@@ -711,7 +717,7 @@
                     safety mechanisms, improve care, and…</p>
             </div>
         </div>
-        <div class="recent_news_item">
+        <div class="col-md-3 col-12 recent_news_item">
             <div class="recent_news_item_pic">
                 <img src="https://ld-wp73.template-help.com/wordpress/prod_21256/v1/wp-content/uploads/2018/12/blog-26.jpg"
                     alt="">
@@ -723,7 +729,7 @@
                     mid-sized warehouse for…</p>
             </div>
         </div>
-        <div class="recent_news_item">
+        <div class="col-md-3 col-12 recent_news_item">
             <div class="recent_news_item_pic">
                 <img src="https://ld-wp73.template-help.com/wordpress/prod_21256/v1/wp-content/uploads/2018/12/blog-28.jpg"
                     alt="">
@@ -736,13 +742,13 @@
             </div>
         </div>
     </div>
-    <div class="recent_news_button" align="center">
+    <div class=" col-12 recent_news_button" align="center">
         <button>SEE ALL NEWS</button>
     </div>
     <div class="footer_background">
 
-        <div class="footer">
-            <div class="footer_item">
+        <div class="row justify-content-center ">
+            <div class="col-md-2 col-12 footer_item">
                 <img src="picture/MANUFAXasset 0.png" alt="">
                 <p>Construction’s core values have been shaped over more than 10 years of delivering the finest
                     construction
@@ -751,7 +757,7 @@
                     aspect.
                     We stay true to our full promise of efficiency!</p>
             </div>
-            <div class="footer_item">
+            <div class="col-md-2 col-12 footer_item">
                 <h2>NAVIGATION</h2>
                 <a href="#">Home</a>
                 <a href="#">About</a>
@@ -760,14 +766,14 @@
                 <a href="#">Blog</a>
                 <a href="#">Contacts</a>
             </div>
-            <div class="footer_item">
+            <div class="col-md-2 col-12 footer_item">
                 <h2>RECENT COMMENTS</h2>
                 <a href="#">The art and science of color planning for performance requirements</a>
                 <p>Posted by</p><a href="#">admin</a>
                 <a href="#">Future proofing hospitals</a>
                 <p>Posted by</p><a href="#">admin</a>
             </div>
-            <div class="footer_item">
+            <div class="col-md-2 col-12 footer_item">
                 <h2>CONTACTS</h2>
                 <p>Address: 4578 Marmora Road, <br>Glasgow, D04 89GR</p>
                 <p>Phones:
@@ -777,6 +783,15 @@
             </div>
         </div>
     </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
